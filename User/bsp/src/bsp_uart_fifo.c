@@ -1727,7 +1727,7 @@ static void uart_jiexi(uint8_t *buf,char len)
 {
 	uint8_t i=0,cmd=0,piclen=1;
 	uint16_t sum=0,sumR=0;
-	char FileNamebuf[16]={0},ack[2]={0},canbuf[8]={0};
+	char FileNamebuf[16]={0},ack[2]={0},canbuf[8]={0},picbuf[64]={0};
 
 	for(i=2;i<3+buf[2];i++)
 		sum+=buf[i];
@@ -1788,6 +1788,17 @@ static void uart_jiexi(uint8_t *buf,char len)
 				CAN_SendMessage(0x02030001 | (buf[4]<<8),canbuf);
 				sprintf(FileNamebuf, "%s%02d", cfgname[pro_num],buf[4]);
 				ReadFileData(FS_VOLUME_SD,FileNamebuf,&picArray,sizeof(CONFIG_PIC));
+				break;
+			case 7:
+				for(i=0;i<len-8;i++)
+				{
+					picbuf[i] = buf[i+4];
+				}
+				ComFatFS(picbuf);
+				
+				cmd = 0x05;
+				ack[0] = 0x01;
+				comSendMessage(cmd,ack);
 				break;
 			default:
 				break;

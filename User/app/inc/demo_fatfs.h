@@ -110,6 +110,7 @@ typedef struct _CONFIG_PIC{
 
 /* 供外部调用的函数声明 */
 char DemoFatFS(void);
+char ComFatFS(char* recvbuf);
 void analysisCfgFile(void);
 void strCompare( char *title, char* value,int len);
 void zuCompare(char * name,char * num);
@@ -120,6 +121,10 @@ void ReadFileData(char *_ucVolume,char *_fileName,void *buf,uint16_t len);
 int ViewRootDir(char *_ucVolume,char buf[][16]);
 void CreateNewFile(uint8_t pronum,uint8_t picnum,uint8_t flag);
 void DeleteDirFile(char *_ucVolume,char *_fileName);
+
+void jiexi_Pic(int pronum,char* recvbuf);
+void analysisData(char* recv,char* num);
+void strCompare2( char *title, char* value);
 
 void WriteChData(FIL *fileU,char chnum,char datanum,unsigned int datatmp);
 void WriteChAllData(FIL *fileU,char num);

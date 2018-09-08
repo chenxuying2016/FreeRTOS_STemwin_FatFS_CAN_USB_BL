@@ -152,6 +152,25 @@ char DemoFatFS(void)
 //		vTaskDelay(10);
 }
 
+char ComFatFS(char* recvbuf)
+{
+	uint32_t i;
+	char max_pro_num = 0;
+		
+	if((recvbuf[0] == '#') || (recvbuf[0] == 'E'))
+	{
+		jiexi_Pic(max_pro_num,recvbuf);
+	}else{
+		readPro(max_pro_num);
+		strcpy(cfgname[max_pro_num],recvbuf);
+
+		CreateNewFile(0,0,1);
+	}
+	
+	return max_pro_num;
+//		vTaskDelay(10);
+}
+
 /*
 *********************************************************************************************************
 *	º¯ Êý Ãû: ViewRootDir
@@ -254,6 +273,18 @@ void MSC_App3(int pronum)
 	}
 }
 
+void jiexi_Pic(int pronum,char* recvbuf)
+{	
+	uint8_t pic_number;
+	
+	analysisData(recvbuf,&pic_number);
+	if(jiexiwan_flag==1)
+	{
+		jiexiwan_flag=0;
+		CreateNewFile(pronum,pic_number,0);
+	}
+}
+
 void analysisCfgFile(void)
 {	
 	FRESULT result;
@@ -312,6 +343,30 @@ void analysisCfgFile(void)
 	}
 }
 
+void analysisData(char* recv,char* num)
+{	
+	FRESULT result;
+	int i=0,count=0,len=0;
+	char flag = 1;
+	uint32_t byteRead = 0;
+	char buf[64]={0},para1[16]={0},para2[16]={0};
+	
+	if(strcmp(recv, "END") == 0)
+	{
+		jiexiwan_flag=1;
+		*num = cfg_para.picNum;
+	}else{
+		len = strlen(recv);
+		strncpy(buf,recv+1,len-2);
+		str_split(para1,para2,buf,'=');
+
+		strCompare2(para1,para2);
+		
+		memset(para1,0,16);
+		memset(para2,0,16);
+	}
+}
+
 void strCompare( char *title, char* value,int len)
 {	
 	switch(len)
@@ -364,6 +419,32 @@ void strCompare( char *title, char* value,int len)
 			chCompare(title,value);
 			break;
 	}		
+}
+
+void strCompare2( char *title, char* value)
+{	
+	if(memcmp("picmaxn",title,7) == 0)
+		cfg_para.picMaxN = atoi(value);
+	
+	if(memcmp("picname",title,7) == 0)
+		strncpy(cfg_para.picName,value,7);
+	
+	if(memcmp("picnum",title,6) == 0)
+		cfg_para.picNum = atoi(value);
+	
+	if(memcmp("voltage",title,7) == 0)
+		cfg_para.voltage = atoi(value);
+	
+	if(memcmp("current",title,7) == 0)
+		cfg_para.current = atoi(value);
+	
+	if(memcmp("total_time",title,9) == 0)
+		cfg_para.totalTime = atoi(value);
+	
+	if(memcmp("ch_zu",title,5) == 0)
+		zuCompare(title,value);
+	else if(memcmp("ch",title,2) == 0)
+		chCompare(title,value);
 }
 
 void zuCompare(char * name,char * value)

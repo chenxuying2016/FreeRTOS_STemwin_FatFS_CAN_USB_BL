@@ -143,50 +143,18 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>623</LineNumber>
+          <LineNumber>1559</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134370812</Address>
+          <Address>134383712</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\CELL\麓煤脗毛\26露掳脥锚脮没掳忙\FreeRTOS_STemwin_FatFS_CAN_USB18.8.6\emWin\emWinTask\MainTask.c</Filename>
+          <Filename>D:\CELL\麓煤脗毛\26露掳脥锚脮没掳忙\FreeRTOS_STemwin_FatFS_CAN_USB18.8.22\User\app\src\demo_fatfs.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>572</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134370520</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\CELL\麓煤脗毛\26露掳脥锚脮没掳忙\FreeRTOS_STemwin_FatFS_CAN_USB18.8.6\emWin\emWinTask\MainTask.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>1486</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134289682</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\CELL\麓煤脗毛\26露掳脥锚脮没掳忙\FreeRTOS_STemwin_FatFS_CAN_USB18.8.6\User\app\src\demo_fatfs.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\output\../../User/app/src/demo_fatfs.c\1559</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -203,12 +171,12 @@
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>correctbuf</ItemText>
+          <ItemText>corretPara</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>corretPara</ItemText>
+          <ItemText>correctbuf</ItemText>
         </Ww>
       </WatchWindow1>
       <MemoryWindow1>
@@ -271,10 +239,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>1</ColumnNumber>
+      <ColumnNumber>6</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>72</TopLine>
-      <CurrentLine>607</CurrentLine>
+      <TopLine>101</TopLine>
+      <CurrentLine>504</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\User\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -369,8 +337,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>103</TopLine>
-      <CurrentLine>1479</CurrentLine>
+      <TopLine>1540</TopLine>
+      <CurrentLine>1559</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\User\app\src\demo_fatfs.c</PathWithFileName>
       <FilenameWithoutPath>demo_fatfs.c</FilenameWithoutPath>
@@ -503,10 +471,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>24</ColumnNumber>
+      <ColumnNumber>57</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1639</TopLine>
-      <CurrentLine>1650</CurrentLine>
+      <TopLine>1644</TopLine>
+      <CurrentLine>1656</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\User\bsp\src\bsp_uart_fifo.c</PathWithFileName>
       <FilenameWithoutPath>bsp_uart_fifo.c</FilenameWithoutPath>
@@ -673,7 +641,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>188</TopLine>
+      <TopLine>182</TopLine>
       <CurrentLine>191</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429_439xx.s</PathWithFileName>
@@ -1497,8 +1465,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>2713</TopLine>
-      <CurrentLine>2714</CurrentLine>
+      <TopLine>3045</TopLine>
+      <CurrentLine>3054</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\FreeRTOS\tasks.c</PathWithFileName>
       <FilenameWithoutPath>tasks.c</FilenameWithoutPath>
