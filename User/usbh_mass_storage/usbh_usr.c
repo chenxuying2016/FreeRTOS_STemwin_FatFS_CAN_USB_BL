@@ -34,10 +34,12 @@
 #include "usbh_msc_bot.h"
 #include "bsp_usb.h"
 #include "MainTask.h"
+#include "includes.h"
 
 #define usb_printf	printf
 //#define usb_printf(...)
 
+extern TaskHandle_t xHandleTaskGUI;
 
 #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
   #if defined ( __ICCARM__ )  /*!< IAR Compiler */
@@ -336,6 +338,7 @@ void USBH_USR_EnumerationDone(void)
 {
 	/* Enumeration complete */
 //	usb_printf((void *)MSG_DEV_ENUMERATED);
+	xTaskNotifyGive(xHandleTaskGUI);
 }
 
 

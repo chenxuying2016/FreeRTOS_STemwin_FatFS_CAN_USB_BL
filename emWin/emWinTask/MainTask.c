@@ -37,6 +37,7 @@ extern char flag_correct ;
 //extern QueueHandle_t xQueue2;
 
 WM_HWIN hWinInfo;    /* 信息窗口句柄 */
+WM_HWIN hWinInfoSave;    /* 信息窗口句柄 */
 WM_HWIN  hWinMain;   
 WM_HWIN hWinSet;    
 WM_HWIN hWinLast;    /* 信息窗口句柄 */
@@ -68,6 +69,7 @@ char change_data = 0;
 char save_flag = 1;
 char setflag = 0;
 char pageflag = 0;
+char delFlag = 0;
 
 #define ID_Timer1   0
 #define ID_Timer2   1
@@ -156,11 +158,100 @@ typedef struct {
 
 #define WM_LIMIT 				(WM_USER + 0x00)
 
-
-void DeleteFramewin(WM_HWIN hWin)
+static const GUI_WIDGET_CREATE_INFO _aDialogCreateInfo[] = 
 {
-	WM_DeleteWindow(hWin);
-	hWin = 0;
+	{ FRAMEWIN_CreateIndirect, "Framewin", ID_FRAMEWIN_0, 250, 180, 300, 120, 0, 0x64, 0 },
+	{ TEXT_CreateIndirect, "Text", ID_TEXT_0, 40, 30, 220, 24, 0, 0x64, 0 },
+};
+
+static void _cbDialogInfo(WM_MESSAGE * pMsg) 
+{
+	WM_HWIN hItem;
+
+	switch (pMsg->MsgId) 
+	{
+		/* 显示armfly的logo*/
+		case WM_PAINT:
+			//GUI_DrawBitmap(&bmLogo_armflySmall, 50,130);
+			break;
+		
+		case WM_INIT_DIALOG:
+			
+			/* 初始化框架窗口 */
+			hItem = pMsg->hWin;
+			FRAMEWIN_SetFont(hItem, &GUI_Fontkai24);
+			FRAMEWIN_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
+			FRAMEWIN_SetText(hItem, "删除信息");
+			FRAMEWIN_SetTextColor(hItem, 0x00000000);
+		
+			/* 初始化ID_TEXT_0到ID_TEXT_3*/
+			hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_0);
+			TEXT_SetFont(hItem, &GUI_Fontkai24);
+			TEXT_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
+			TEXT_SetText(hItem, "正在删除···");
+			break;
+			
+		default:
+			WM_DefaultProc(pMsg);
+	}
+}
+
+void CreateFramewin(void) 
+{
+	hWinInfo = GUI_CreateDialogBox(_aDialogCreateInfo, GUI_COUNTOF(_aDialogCreateInfo), _cbDialogInfo, WM_HBKWIN, 0, 0);
+}
+
+void DeleteFramewin(void)
+{
+	WM_DeleteWindow(hWinInfo);
+}
+
+static const GUI_WIDGET_CREATE_INFO _aDialogCreateInfo2[] = 
+{
+	{ FRAMEWIN_CreateIndirect, "Framewin", ID_FRAMEWIN_0, 250, 180, 300, 120, 0, 0x64, 0 },
+	{ TEXT_CreateIndirect, "Text", ID_TEXT_0, 40, 30, 220, 24, 0, 0x64, 0 },
+};
+
+static void _cbDialogInfo2(WM_MESSAGE * pMsg) 
+{
+	WM_HWIN hItem;
+
+	switch (pMsg->MsgId) 
+	{
+		/* 显示armfly的logo*/
+		case WM_PAINT:
+			//GUI_DrawBitmap(&bmLogo_armflySmall, 50,130);
+			break;
+		
+		case WM_INIT_DIALOG:
+			
+			/* 初始化框架窗口 */
+			hItem = pMsg->hWin;
+			FRAMEWIN_SetFont(hItem, &GUI_Fontkai24);
+			FRAMEWIN_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
+			FRAMEWIN_SetText(hItem, "保存信息");
+			FRAMEWIN_SetTextColor(hItem, 0x00000000);
+		
+			/* 初始化ID_TEXT_0到ID_TEXT_3*/
+			hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_0);
+			TEXT_SetFont(hItem, &GUI_Fontkai24);
+			TEXT_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
+			TEXT_SetText(hItem, "正在保存···");
+			break;
+			
+		default:
+			WM_DefaultProc(pMsg);
+	}
+}
+
+void CreateFramewin3(void) 
+{
+	hWinInfoSave = GUI_CreateDialogBox(_aDialogCreateInfo, GUI_COUNTOF(_aDialogCreateInfo2), _cbDialogInfo2, WM_HBKWIN, 0, 0);
+}
+
+void DeleteFramewin3(void)
+{
+	WM_DeleteWindow(hWinInfoSave);
 }
 
 /*
@@ -418,22 +509,18 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 //				temp = cfg_para.current/100;
 			sprintf(buf, "%d", temp);
 			strcat(buf," mA");
-			TEXT_SetText(hItem, buf);
+			TEXT_SetText(hItem, buf);			
+				
+			if(WM_IsWindow(hWinInfo) && delFlag)
+			{
+				delFlag = 0;
+				GUI_Delay(300);
+				DeleteFramewin();
+				WM_SetFocus(hWinMain);
+			}
 		}
 		/* 重启定时器 */
 		WM_RestartTimer(pMsg->Data.v, 100);
-		break;
-		
-	case MSG_DeleteInfo:
-		if(WM_IsWindow(hWinInfo))
-		{
-			DeleteFramewin(hWinInfo);
-		}
-//		if(WM_IsWindow(hWinMain))
-//		{
-//			DeleteFramewin(hWinMain);
-//			hWinSet = CreateFramewin5();
-//		}
 		break;
 				
 	case WM_NOTIFY_PARENT:
@@ -457,10 +544,6 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 			  case WM_NOTIFICATION_CLICKED:
 				break;
 			  case WM_NOTIFICATION_RELEASED:
-				if(!WM_IsWindow(hWinInfo))
-				{
-//					CreateFramewin();
-				}
 				hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
 				pro_num = DROPDOWN_GetSel(hItem);	
 				xTaskNotify(xHandleTaskMsgPro,BIT_16 | pro_num,eSetValueWithOverwrite);
@@ -475,6 +558,10 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 			  case WM_NOTIFICATION_CLICKED:
 				break;
 			  case WM_NOTIFICATION_RELEASED:
+				if(!WM_IsWindow(hWinInfo))
+				{
+					CreateFramewin();
+				}
 				hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
 				pro_num = DROPDOWN_GetSel(hItem);
 				memset(buf,0,sizeof(buf));
@@ -488,6 +575,7 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 				DROPDOWN_DeleteItem(hItem,pro_num);
 				DeleteDirFile(FS_VOLUME_SD,buf1);
 //				CreateNewFile(0,0,1);
+				delFlag = 1;
 				break;
 			  }
 			  break;
@@ -1979,6 +2067,14 @@ static void _cbDialog5(WM_MESSAGE * pMsg)
 					change_data = 0;
 					break;
 			}
+			
+			if(WM_IsWindow(hWinInfoSave) && delFlag)
+			{
+				delFlag = 0;
+				GUI_Delay(300);
+				DeleteFramewin3();
+				WM_SetFocus(hWinSet);
+			}
 		}
 		/* 重启定时器 */
 		WM_RestartTimer(pMsg->Data.v, 400);
@@ -2056,6 +2152,10 @@ static void _cbDialog5(WM_MESSAGE * pMsg)
 						case WM_NOTIFICATION_CLICKED:
 							break;
 						case WM_NOTIFICATION_RELEASED:
+							if(!WM_IsWindow(hWinInfo))
+							{
+								CreateFramewin3();
+							}
 							hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
 							pro_num = DROPDOWN_GetSel(hItem);
 							hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_1);
@@ -2078,7 +2178,7 @@ static void _cbDialog5(WM_MESSAGE * pMsg)
 							GUI_Delay(10);
 							xTaskNotify(xHandleTaskMsgPro,BIT_24,eSetBits);
 							GUI_Delay(10);
-
+							delFlag = 1;
 							break;
 					}
 					break;
@@ -2162,77 +2262,7 @@ void CreateFramewin5(void)
 }
 
 /***************************************************************************/
-//static uint8_t File_Init(void)
-//{ 
-//	usbh_OpenMassStorage();
-//	
-////	USBH_Process(&USB_OTG_Core, &USB_Host);
-
-//	result = f_mount(&fs_usb, "2:", 0);
-//	if (result != FR_OK)
-//	{
-//		f_mount(NULL,"2:", 0);
-//		return 0;
-//	}
-//	
-//	result = f_opendir(&DirInf_usb, "2:/"); 
-//	if (result != FR_OK)
-//	{
-////		printf("open USB dir error!\r\n");
-//		f_mount(NULL,"2:", 0);
-//		return 0;
-//	}
-//	else
-//	{
-//		f_mount(NULL,"2:", 0);
-//		return 1;
-//	}
-//}
  
-static const GUI_WIDGET_CREATE_INFO _aDialogCreateInfo[] = 
-{
-	{ FRAMEWIN_CreateIndirect, "Framewin", ID_FRAMEWIN_0, 250, 180, 300, 120, 0, 0x64, 0 },
-	{ TEXT_CreateIndirect, "Text", ID_TEXT_0, 40, 30, 220, 24, 0, 0x64, 0 },
-};
-
-static void _cbDialogInfo(WM_MESSAGE * pMsg) 
-{
-	WM_HWIN hItem;
-
-	switch (pMsg->MsgId) 
-	{
-		/* 显示armfly的logo*/
-		case WM_PAINT:
-			//GUI_DrawBitmap(&bmLogo_armflySmall, 50,130);
-			break;
-		
-		case WM_INIT_DIALOG:
-			
-			/* 初始化框架窗口 */
-			hItem = pMsg->hWin;
-			FRAMEWIN_SetFont(hItem, &GUI_Fontkai24);
-			FRAMEWIN_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
-			FRAMEWIN_SetText(hItem, "加载信息");
-			FRAMEWIN_SetTextColor(hItem, 0x00000000);
-		
-			/* 初始化ID_TEXT_0到ID_TEXT_3*/
-			hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_0);
-			TEXT_SetFont(hItem, &GUI_Fontkai24);
-			TEXT_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
-			TEXT_SetText(hItem, "正在加载配置···");
-			break;
-			
-		default:
-			WM_DefaultProc(pMsg);
-	}
-}
-
-void CreateFramewin(void) 
-{
-	hWinInfo = GUI_CreateDialogBox(_aDialogCreateInfo, GUI_COUNTOF(_aDialogCreateInfo), _cbDialogInfo, WM_HBKWIN, 0, 0);
-}
-
-
 int getChData(char dataNum)
 {	
 	int datatmp=0;
@@ -2328,7 +2358,8 @@ void MainTask(void)
 	
 	GUI_SetFont(&GUI_Fontyahei36);
 	GUI_DispStringAt("正在初始化系统●●●", (LCD_GetXSize() - 8*36)/2 + 8, (LCD_GetYSize()/2 + 36 + 30));	
-	
+		
+	ulTaskNotifyTake(pdTRUE,portMAX_DELAY); /* 无限等待 */
 	GUI_Delay(800);
   if(File_Init())
 	{
@@ -2391,7 +2422,7 @@ void MainTask(void)
 //				   0);	                     /* 留待将来使用，应为0 */
 	
 	while(1) 
-	{		
+	{
 		GUI_Delay(20);
 	}
 }

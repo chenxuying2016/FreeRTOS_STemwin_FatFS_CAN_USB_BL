@@ -1516,10 +1516,6 @@ void addPro(char len,char proname[][16])
 
 uint8_t File_Init(void)
 { 
-	usbh_OpenMassStorage();
-	
-//	USBH_Process(&USB_OTG_Core, &USB_Host);
-
 	f_mount(NULL,"2:", 0);
 	result = f_mount(&fs_usb, "2:", 0);
 	if (result != FR_OK)

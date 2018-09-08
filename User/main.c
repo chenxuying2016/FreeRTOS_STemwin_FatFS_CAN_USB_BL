@@ -516,9 +516,11 @@ static void vTaskCom(void *pvParameters)
 */
 static void vTaskUSBPro(void *pvParameters)
 {
+		usbh_OpenMassStorage();
+	
     while(1)
     {
-//			if(HCD_IsDeviceConnected(&USB_OTG_Core))
+			if(HCD_IsDeviceConnected(&USB_OTG_Core))
 			{
 				USBH_Process(&USB_OTG_Core, &USB_Host);
 			}	
