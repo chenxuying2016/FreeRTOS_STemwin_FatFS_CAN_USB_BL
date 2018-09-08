@@ -36,11 +36,10 @@ extern char flag_correct ;
 //extern QueueHandle_t xQueue1;
 //extern QueueHandle_t xQueue2;
 
-WM_HWIN hWinInfo;    /* 信息窗口句柄 */
+WM_HWIN hWinInfoDel;    /* 信息窗口句柄 */
 WM_HWIN hWinInfoSave;    /* 信息窗口句柄 */
 WM_HWIN  hWinMain;   
-WM_HWIN hWinSet;    
-WM_HWIN hWinLast;    /* 信息窗口句柄 */
+WM_HWIN hWinSet;
 
 BUTTON_SKINFLEX_PROPS BUTTON_pProps;
 DROPDOWN_SKINFLEX_PROPS DROPDOWN_pProps;
@@ -71,6 +70,8 @@ char setflag = 0;
 char pageflag = 0;
 char delFlag = 0;
 
+static char buf_del[16];
+
 #define ID_Timer1   0
 #define ID_Timer2   1
 #define LEN_ITEM_TEXT 15
@@ -87,10 +88,8 @@ extern GUI_CONST_STORAGE GUI_FONT GUI_Fontyahei72;
 extern GUI_CONST_STORAGE GUI_FONT GUI_Fontyahei48;
 extern GUI_CONST_STORAGE GUI_FONT GUI_Fontkai20;
 
-WM_HWIN CreateWindow1(void);
-void CreateFramewin(void);
-void CreateFramewin4(void);
-void CreateFramewin5(void);
+void CreateFramewin1(void);
+void CreateFramewin2(void);
 
 typedef struct {
   char *   pText;
@@ -111,8 +110,8 @@ typedef struct {
 **********************************************************************
 */
 #define ID_FRAMEWIN_0		(GUI_ID_USER + 0x00)
-#define ID_TEXT_0				(GUI_ID_USER + 0x01)
-#define ID_DROPDOWN_0		(GUI_ID_USER + 0x02)
+#define ID_DROPDOWN_0		(GUI_ID_USER + 0x01)
+#define ID_TEXT_0				(GUI_ID_USER + 0x02)
 #define ID_TEXT_1				(GUI_ID_USER + 0x03)
 #define ID_TEXT_2				(GUI_ID_USER + 0x04)
 #define ID_TEXT_3				(GUI_ID_USER + 0x05)
@@ -123,60 +122,62 @@ typedef struct {
 #define ID_TEXT_8				(GUI_ID_USER + 0x0A)
 #define ID_TEXT_9				(GUI_ID_USER + 0x0B)
 #define ID_TEXT_10			(GUI_ID_USER + 0x0C)
-#define ID_TEXT_11			(GUI_ID_USER + 0x0D)
-#define ID_TEXT_12			(GUI_ID_USER + 0x0E)
-#define ID_EDIT_0				(GUI_ID_USER + 0x0F)
-#define ID_EDIT_1				(GUI_ID_USER + 0x10)
-#define ID_EDIT_2				(GUI_ID_USER + 0x11)
-#define ID_TEXT_13			(GUI_ID_USER + 0x12)
-#define ID_TEXT_14			(GUI_ID_USER + 0x13)
-#define ID_TEXT_15			(GUI_ID_USER + 0x14)
-#define ID_DROPDOWN_1		(GUI_ID_USER + 0x15)   
-#define ID_DROPDOWN_2		(GUI_ID_USER + 0x16)
+#define ID_BUTTON_0			(GUI_ID_USER + 0x0D)
+#define ID_BUTTON_1			(GUI_ID_USER + 0x0E)		
+#define ID_BUTTON_2			(GUI_ID_USER + 0x0F)		
+#define ID_BUTTON_3			(GUI_ID_USER + 0x10)		
+#define ID_BUTTON_4			(GUI_ID_USER + 0x11)
+
+#define ID_TEXT_11			(GUI_ID_USER + 0x12)
+#define ID_TEXT_12			(GUI_ID_USER + 0x13)
+#define ID_TEXT_13			(GUI_ID_USER + 0x14)
+#define ID_TEXT_14			(GUI_ID_USER + 0x15)
+#define ID_TEXT_15			(GUI_ID_USER + 0x16)
 #define ID_TEXT_16			(GUI_ID_USER + 0x17)   
 #define ID_TEXT_17			(GUI_ID_USER + 0x18)   
 #define ID_TEXT_18			(GUI_ID_USER + 0x19)   
-#define ID_TEXT_19			(GUI_ID_USER + 0x1A) 
-#define ID_EDIT_3				(GUI_ID_USER + 0x1F)
-#define ID_EDIT_4				(GUI_ID_USER + 0x20)
-#define ID_EDIT_5				(GUI_ID_USER + 0x21)
-#define ID_EDIT_6				(GUI_ID_USER + 0x22)
-#define ID_EDIT_7				(GUI_ID_USER + 0x23)
-#define ID_EDIT_8				(GUI_ID_USER + 0x24)
-#define ID_EDIT_9				(GUI_ID_USER + 0x25)
-#define ID_EDIT_10			(GUI_ID_USER + 0x26)
-#define ID_EDIT_11			(GUI_ID_USER + 0x27)
-#define ID_EDIT_12			(GUI_ID_USER + 0x28)
-#define ID_EDIT_13			(GUI_ID_USER + 0x29)
-#define ID_EDIT_14			(GUI_ID_USER + 0x2A)
-#define ID_LISTVIEW_0		(GUI_ID_USER + 0x2B)
-#define ID_BUTTON_0			(GUI_ID_USER + 0x2C)
-#define ID_BUTTON_1			(GUI_ID_USER + 0x2D)		
-#define ID_BUTTON_2			(GUI_ID_USER + 0x2E)		
-#define ID_BUTTON_3			(GUI_ID_USER + 0x2F)		
-#define ID_BUTTON_4			(GUI_ID_USER + 0x30)
+#define ID_TEXT_19			(GUI_ID_USER + 0x1A)
+#define ID_DROPDOWN_1		(GUI_ID_USER + 0x1B)   
+#define ID_DROPDOWN_2		(GUI_ID_USER + 0x1C)
+
+#define ID_EDIT_0				(GUI_ID_USER + 0x1D)
+#define ID_EDIT_1				(GUI_ID_USER + 0x1E)
+#define ID_EDIT_2				(GUI_ID_USER + 0x1F)
+#define ID_EDIT_3				(GUI_ID_USER + 0x20)
+#define ID_EDIT_4				(GUI_ID_USER + 0x21)
+#define ID_EDIT_5				(GUI_ID_USER + 0x22)
+#define ID_EDIT_6				(GUI_ID_USER + 0x23)
+#define ID_EDIT_7				(GUI_ID_USER + 0x24)
+#define ID_EDIT_8				(GUI_ID_USER + 0x25)
+#define ID_EDIT_9				(GUI_ID_USER + 0x26)
+#define ID_EDIT_10			(GUI_ID_USER + 0x27)
+#define ID_EDIT_11			(GUI_ID_USER + 0x28)
+#define ID_EDIT_12			(GUI_ID_USER + 0x29)
+#define ID_EDIT_13			(GUI_ID_USER + 0x2A)
+#define ID_EDIT_14			(GUI_ID_USER + 0x2B)
+#define ID_LISTVIEW_0		(GUI_ID_USER + 0x2C)
 
 #define WM_LIMIT 				(WM_USER + 0x00)
+#define MSG_CreateInfo  (GUI_ID_USER + 0x31)
+#define MSG_DeleteInfo  (GUI_ID_USER + 0x32)
 
-static const GUI_WIDGET_CREATE_INFO _aDialogCreateInfo[] = 
+static const GUI_WIDGET_CREATE_INFO _aDialogCreateInfoDel[] = 
 {
-	{ FRAMEWIN_CreateIndirect, "Framewin", ID_FRAMEWIN_0, 250, 180, 300, 120, 0, 0x64, 0 },
+	{ FRAMEWIN_CreateIndirect, "Framewin", ID_FRAMEWIN_0, 250, 160, 300, 160, 0, 0x64, 0 },
 	{ TEXT_CreateIndirect, "Text", ID_TEXT_0, 40, 30, 220, 24, 0, 0x64, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_0, 50, 70, 90, 30, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_1, 160, 70, 90, 30, 0, 0x0, 0 },
 };
 
-static void _cbDialogInfo(WM_MESSAGE * pMsg) 
+static void _cbDialogInfoDel(WM_MESSAGE * pMsg) 
 {
 	WM_HWIN hItem;
+	int     NCode;
+	int     Id;
 
 	switch (pMsg->MsgId) 
-	{
-		/* 显示armfly的logo*/
-		case WM_PAINT:
-			//GUI_DrawBitmap(&bmLogo_armflySmall, 50,130);
-			break;
-		
+	{		
 		case WM_INIT_DIALOG:
-			
 			/* 初始化框架窗口 */
 			hItem = pMsg->hWin;
 			FRAMEWIN_SetFont(hItem, &GUI_Fontkai24);
@@ -184,35 +185,72 @@ static void _cbDialogInfo(WM_MESSAGE * pMsg)
 			FRAMEWIN_SetText(hItem, "删除信息");
 			FRAMEWIN_SetTextColor(hItem, 0x00000000);
 		
-			/* 初始化ID_TEXT_0到ID_TEXT_3*/
 			hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_0);
 			TEXT_SetFont(hItem, &GUI_Fontkai24);
 			TEXT_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
-			TEXT_SetText(hItem, "正在删除···");
+			TEXT_SetText(hItem, "请选择是否删除");
+		
+			hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_0);
+			BUTTON_SetFont(hItem, &GUI_Fontkai24);
+			BUTTON_SetText(hItem, "是");
+			hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_1);
+			BUTTON_SetFont(hItem, &GUI_Fontkai24);
+			BUTTON_SetText(hItem, "否");
 			break;
+				
+	case WM_NOTIFY_PARENT:
+		Id = WM_GetId(pMsg->hWinSrc);
+		NCode = pMsg->Data.v;    
+		switch (Id) {
+			case ID_BUTTON_0: // Notifications sent by 'Button' 
+			  switch(NCode) {
+			  case WM_NOTIFICATION_CLICKED:
+				break;
+			  case WM_NOTIFICATION_RELEASED:
+				hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_0);
+				TEXT_SetText(hItem, "正在删除···");
+//				delFlag = 1;
+				WM_SendMessageNoPara(WM_GetClientWindow(hWinMain),MSG_DeleteInfo);
+				GUI_Delay(10);
+				break;
+			  }
+			  break;
+
+			case ID_BUTTON_1: // Notifications sent by 'Button'
+			  switch(NCode) {
+			  case WM_NOTIFICATION_CLICKED:
+				break;
+			  case WM_NOTIFICATION_RELEASED:
+				GUI_EndDialog(pMsg->hWin, 0);
+				WM_SetFocus(hWinMain);
+				break;
+			  }
+			  break;
+		}
+		break;
 			
 		default:
 			WM_DefaultProc(pMsg);
 	}
 }
 
-void CreateFramewin(void) 
+void CreateFramewinDel(void) 
 {
-	hWinInfo = GUI_CreateDialogBox(_aDialogCreateInfo, GUI_COUNTOF(_aDialogCreateInfo), _cbDialogInfo, WM_HBKWIN, 0, 0);
+	hWinInfoDel = GUI_CreateDialogBox(_aDialogCreateInfoDel, GUI_COUNTOF(_aDialogCreateInfoDel), _cbDialogInfoDel, WM_HBKWIN, 0, 0);
 }
 
-void DeleteFramewin(void)
+void DeleteFramewinDel(void)
 {
-	WM_DeleteWindow(hWinInfo);
+	WM_DeleteWindow(hWinInfoDel);
 }
 
-static const GUI_WIDGET_CREATE_INFO _aDialogCreateInfo2[] = 
+static const GUI_WIDGET_CREATE_INFO _aDialogCreateInfoSave[] = 
 {
 	{ FRAMEWIN_CreateIndirect, "Framewin", ID_FRAMEWIN_0, 250, 180, 300, 120, 0, 0x64, 0 },
 	{ TEXT_CreateIndirect, "Text", ID_TEXT_0, 40, 30, 220, 24, 0, 0x64, 0 },
 };
 
-static void _cbDialogInfo2(WM_MESSAGE * pMsg) 
+static void _cbDialogInfoSave(WM_MESSAGE * pMsg) 
 {
 	WM_HWIN hItem;
 
@@ -244,12 +282,12 @@ static void _cbDialogInfo2(WM_MESSAGE * pMsg)
 	}
 }
 
-void CreateFramewin3(void) 
+void CreateFramewinSave(void) 
 {
-	hWinInfoSave = GUI_CreateDialogBox(_aDialogCreateInfo, GUI_COUNTOF(_aDialogCreateInfo2), _cbDialogInfo2, WM_HBKWIN, 0, 0);
+	hWinInfoSave = GUI_CreateDialogBox(_aDialogCreateInfoSave, GUI_COUNTOF(_aDialogCreateInfoSave), _cbDialogInfoSave, WM_HBKWIN, 0, 0);
 }
 
-void DeleteFramewin3(void)
+void DeleteFramewinSave(void)
 {
 	WM_DeleteWindow(hWinInfoSave);
 }
@@ -259,7 +297,7 @@ void DeleteFramewin3(void)
 *	                       GUI_WIDGET_CREATE_INFOÀàÐÍÊý×é
 *********************************************************************************************************
 */
-static const GUI_WIDGET_CREATE_INFO _aDialogCreate4[] = 
+static const GUI_WIDGET_CREATE_INFO _aDialogCreate1[] = 
 {
 	{ FRAMEWIN_CreateIndirect, "Framewin", ID_FRAMEWIN_0, 0, 0, 800, 480, 0, 0x64, 0 },
   { TEXT_CreateIndirect, "Text", ID_TEXT_0, 170, 10, 700, 48, 0, 0x64, 0 },
@@ -284,7 +322,7 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate4[] =
 };
 
 
-static void _cbDialog4(WM_MESSAGE * pMsg) 
+static void _cbDialog1(WM_MESSAGE * pMsg) 
 {
 	WM_HWIN hItem;
 	int     NCode;
@@ -294,7 +332,7 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 	int temp;
 	float temp_f;
 	unsigned char i;
-//	char pro_num = 0;
+//	char pro_num_del = 0;
 	BaseType_t xResult;
 	uint32_t ulValue;
 
@@ -391,10 +429,7 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 		TEXT_SetFont(hItem, GUI_FONT_32B_1);
 		TEXT_SetTextAlign(hItem, GUI_TA_LEFT | GUI_TA_VCENTER);
 		hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_7);
-		TEXT_SetFont(hItem, GUI_FONT_32B_1);		
-		memset(fileName,0,sizeof(fileName));
-		sprintf(fileName,"%s00",cfgname[0]);
-		ReadFileData(FS_VOLUME_SD,fileName,&picArray,sizeof(CONFIG_PIC));
+		TEXT_SetFont(hItem, GUI_FONT_32B_1);
 		TEXT_SetTextAlign(hItem, GUI_TA_LEFT | GUI_TA_VCENTER);
 		hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_8);
 		TEXT_SetFont(hItem, GUI_FONT_32B_1);
@@ -405,7 +440,7 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 		hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_10);
 		TEXT_SetFont(hItem, GUI_FONT_24_1);
 		TEXT_SetTextAlign(hItem, GUI_TA_LEFT | GUI_TA_VCENTER);
-		TEXT_SetText(hItem, "Shanghai Freesense Image Technology Co,.Ltd.          V4014.01.02");
+		TEXT_SetText(hItem, "Shanghai Freesense Image Technology Co,.Ltd.          V4014.01.03");
 	}	
     //
     // Initialization of 'Button'
@@ -511,16 +546,36 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 			strcat(buf," mA");
 			TEXT_SetText(hItem, buf);			
 				
-			if(WM_IsWindow(hWinInfo) && delFlag)
-			{
-				delFlag = 0;
-				GUI_Delay(300);
-				DeleteFramewin();
-				WM_SetFocus(hWinMain);
-			}
+//			if(delFlag)
+//			{
+//				delFlag = 0;
+
+//				hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
+//				DROPDOWN_DeleteItem(hItem,pro_num);
+//				DeleteDirFile(FS_VOLUME_SD,buf_del);
+//				GUI_Delay(300);
+//				DeleteFramewin();
+//				WM_SetFocus(hWinMain);
+//			}
 		}
 		/* 重启定时器 */
 		WM_RestartTimer(pMsg->Data.v, 100);
+		break;
+		
+	case MSG_DeleteInfo:
+//		if(WM_IsWindow(hWinInfo))
+		{
+			hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
+			DROPDOWN_DeleteItem(hItem,pro_num);
+			for(i=pro_num;cfgname[i][0] != '\0';i++)
+			{
+					strcpy(cfgname[i],cfgname[i+1]);
+			}
+			DeleteDirFile(FS_VOLUME_SD,buf_del);
+			GUI_Delay(300);
+			DeleteFramewinDel();
+			WM_SetFocus(hWinMain);
+		}
 		break;
 				
 	case WM_NOTIFY_PARENT:
@@ -558,24 +613,16 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 			  case WM_NOTIFICATION_CLICKED:
 				break;
 			  case WM_NOTIFICATION_RELEASED:
-				if(!WM_IsWindow(hWinInfo))
+				if(!WM_IsWindow(hWinInfoDel))
 				{
-					CreateFramewin();
+					CreateFramewinDel();
 				}
 				hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
 				pro_num = DROPDOWN_GetSel(hItem);
 				memset(buf,0,sizeof(buf));
-				memset(buf1,0,sizeof(buf1));
+				memset(buf_del,0,sizeof(buf_del));
 				DROPDOWN_GetItemText(hItem,pro_num,buf,sizeof(buf));
-				strncpy(buf1,buf+2,strlen(buf)-2);
-				for(i=pro_num;cfgname[i][0] != '\0';i++)
-				{
-						strcpy(cfgname[i],cfgname[i+1]);
-				}
-				DROPDOWN_DeleteItem(hItem,pro_num);
-				DeleteDirFile(FS_VOLUME_SD,buf1);
-//				CreateNewFile(0,0,1);
-				delFlag = 1;
+				strncpy(buf_del,buf+2,strlen(buf)-2);
 				break;
 			  }
 			  break;
@@ -614,37 +661,9 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 			  case WM_NOTIFICATION_CLICKED:
 				break;
 			  case WM_NOTIFICATION_RELEASED:
-//				WM_DeleteTimer(ID_Timer1);
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_0));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_1));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_2));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_3));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_4));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_5));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_6));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_7));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_8));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_9));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_10));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_BUTTON_0));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_BUTTON_1));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_BUTTON_2));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_BUTTON_3));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_BUTTON_4));
-//							GUI_EndDialog(pMsg->hWin, 0);
-//				DeleteFramewin(pMsg->hWin);
-//				pMsg->hWin = 0;
-//							CreateFramewin5();
-//				DeleteFramewin(hWinMain);
-//				hWinSet=CreateFramewin3();
-//				WM_Paint(hWinSet);
-			hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
-			WM_SetFocus(hItem);	
-				WM_HideWindow(hWinMain);
-				WM_ShowWindow(hWinSet);
-			WM_SetFocus(hWinSet);
-			pageflag = 1;
+				GUI_EndDialog(pMsg->hWin, 0);
+				CreateFramewin2();
+				pageflag = 1;
 				break;
 			  }
 			  break;
@@ -656,13 +675,10 @@ static void _cbDialog4(WM_MESSAGE * pMsg)
 	}
 }
 
-void CreateFramewin4(void) 
+void CreateFramewin1(void) 
 {
-//	WM_HWIN hWin;
-
-	hWinMain = GUI_CreateDialogBox(_aDialogCreate4, GUI_COUNTOF(_aDialogCreate4), _cbDialog4, WM_HBKWIN, 0, 0);
+	hWinMain = GUI_CreateDialogBox(_aDialogCreate1, GUI_COUNTOF(_aDialogCreate1), _cbDialog1, WM_HBKWIN, 0, 0);
 	WM_CreateTimer(WM_GetClientWindow(hWinMain),ID_Timer1,10,0);
-//	return hWin;
 }
 
 static void refreshBlSet(WM_MESSAGE * pMsg)
@@ -1541,7 +1557,7 @@ static void _cbCellEdit(WM_MESSAGE * pMsg) {
 *	                       GUI_WIDGET_CREATE_INFOÀàÐÍÊý×é
 *********************************************************************************************************
 */
-static const GUI_WIDGET_CREATE_INFO _aDialogCreate5[] = 
+static const GUI_WIDGET_CREATE_INFO _aDialogCreate2[] = 
 {
 	{ FRAMEWIN_CreateIndirect, "Framewin", ID_FRAMEWIN_0, 0, 0, 800, 480, 0, 0x64, 0 },
 	{ TEXT_CreateIndirect, "Text", ID_TEXT_0, 480, 170, 80, 28, 0, 0x64, 0 },
@@ -1791,7 +1807,7 @@ void InitDialog(WM_MESSAGE * pMsg)
 }
 
 
-static void _cbDialog5(WM_MESSAGE * pMsg) 
+static void _cbDialog2(WM_MESSAGE * pMsg) 
 {
 	WM_HWIN hItem;
   WM_KEY_INFO    * pKeyInfo;
@@ -1837,7 +1853,8 @@ static void _cbDialog5(WM_MESSAGE * pMsg)
 				DROPDOWN_SetListHeight(hItem, 24*i);
 			
 			sprintf(file_name, "%s00", cfgname[0]);
-			ReadFileData(FS_VOLUME_SD,file_name,&cfg_para,sizeof(cfg_para));
+//			ReadFileData(FS_VOLUME_SD,file_name,&cfg_para,sizeof(cfg_para));
+			xTaskNotify(xHandleTaskMsgPro,BIT_18,eSetBits);
 			
 			hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_1);
 			len = 1;
@@ -1845,15 +1862,17 @@ static void _cbDialog5(WM_MESSAGE * pMsg)
 			{
 				memset(file_name,0,sizeof(file_name));
 				sprintf(file_name,"%s%02d",cfgname[pro_num],i);
-				ReadFileData(FS_VOLUME_SD,file_name,&picArray,sizeof(CONFIG_PIC));
+				xTaskNotify(xHandleTaskMsgPro,BIT_18,eSetBits);
+				GUI_Delay(20);
 				memset(buf1,0,sizeof(buf1));
-				sprintf(buf1, "%d:%s", picArray.picNum,picArray.picName);
+				sprintf(buf1, "%d:%s", cfg_para.picNum,cfg_para.picName);
 				DROPDOWN_AddString(hItem, buf1);
 				len = picArray.picMaxN;
 			}
 			memset(file_name,0,sizeof(file_name));
 			sprintf(file_name,"%s00",cfgname[0]);
-			ReadFileData(FS_VOLUME_SD,file_name,&picArray,sizeof(CONFIG_PIC));
+			xTaskNotify(xHandleTaskMsgPro,BIT_18,eSetBits);
+			GUI_Delay(10);
 		
 			hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_2);
 			for(i=0;i<37;i++)
@@ -1902,14 +1921,7 @@ static void _cbDialog5(WM_MESSAGE * pMsg)
 			GUI_SetColor(GUI_BLACK);
 		}
 			break;
-		
-//	case MSG_DeleteInfo:
-//		if(WM_IsWindow(hWinSet))
-//		{
-//			DeleteFramewin(hWinSet);
-//			hWinMain = CreateWindow1();
-//		}
-//		break;
+
   case WM_KEY:
     hItem = WM_GetDialogItem(pMsg->hWin, ID_LISTVIEW_0);
     if (pMsg->hWinSrc == hItem) {
@@ -2072,7 +2084,7 @@ static void _cbDialog5(WM_MESSAGE * pMsg)
 			{
 				delFlag = 0;
 				GUI_Delay(300);
-				DeleteFramewin3();
+				DeleteFramewinSave();
 				WM_SetFocus(hWinSet);
 			}
 		}
@@ -2152,15 +2164,15 @@ static void _cbDialog5(WM_MESSAGE * pMsg)
 						case WM_NOTIFICATION_CLICKED:
 							break;
 						case WM_NOTIFICATION_RELEASED:
-							if(!WM_IsWindow(hWinInfo))
+							if(!WM_IsWindow(hWinInfoSave))
 							{
-								CreateFramewin3();
+								CreateFramewinSave();
 							}
 							hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
 							pro_num = DROPDOWN_GetSel(hItem);
 							hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_1);
 							pic_num = DROPDOWN_GetSel(hItem);
-							memset(file_name,0,sizeof(file_name));						
+							memset(file_name,0,sizeof(file_name));
 							sprintf(file_name, "%s%02d",cfgname[pro_num], pic_num);
 							xTaskNotify(xHandleTaskMsgPro,BIT_18,eSetBits);
 							GUI_Delay(10);
@@ -2188,58 +2200,8 @@ static void _cbDialog5(WM_MESSAGE * pMsg)
 						case WM_NOTIFICATION_CLICKED:
 							break;
 						case WM_NOTIFICATION_RELEASED:
-//							GUI_EndDialog(pMsg->hWin, 0);
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_1));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_2));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_3));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_0));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_1));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_2));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_3));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_4));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_5));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_6));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_7));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_8));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_9));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_10));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_11));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_12));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_13));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_14));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_15));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_16));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_17));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_18));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_TEXT_19));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_BUTTON_0));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_0));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_1));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_2));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_3));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_4));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_5));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_6));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_7));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_8));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_9));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_10));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_11));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_12));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_13));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_EDIT_14));
-//				DeleteFramewin(WM_GetDialogItem(pMsg->hWin, ID_LISTVIEW_0));
-//				DeleteFramewin(pMsg->hWin);
-//				pMsg->hWin = 0;
-//							CreateFramewin3();
-//							DeleteFramewin(hWinSet);
-//							hWinMain=CreateWindow1();
-//							WM_Paint(hWinMain);
-			hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
-			WM_SetFocus(hItem);	
-							WM_HideWindow(hWinSet);
-							WM_ShowWindow(hWinMain);
-			WM_SetFocus(hWinMain);
+							GUI_EndDialog(pMsg->hWin, 0);
+							CreateFramewin1();
 							break;
 					}
 					break;
@@ -2252,13 +2214,10 @@ static void _cbDialog5(WM_MESSAGE * pMsg)
 	}
 }
 
-void CreateFramewin5(void) 
+void CreateFramewin2(void) 
 {
-//	WM_HWIN hWin;
-
-	hWinSet = GUI_CreateDialogBox(_aDialogCreate5, GUI_COUNTOF(_aDialogCreate5), _cbDialog5, WM_HBKWIN, 0, 0);
+	hWinSet = GUI_CreateDialogBox(_aDialogCreate2, GUI_COUNTOF(_aDialogCreate2), _cbDialog2, WM_HBKWIN, 0, 0);
 	WM_CreateTimer(WM_GetClientWindow(hWinSet),ID_Timer2,10,0);
-//	return hWin;
 }
 
 /***************************************************************************/
@@ -2332,16 +2291,41 @@ int getChData(char dataNum)
 *********************************************************************************************************
 */
 
-extern void task_create(void);
+
 void MainTask(void) 
 {
-//	WM_HWIN hWinMain;
+	static const TickType_t xMaxBlockTimeUI = pdMS_TO_TICKS(800); /* 等待800ms */
+	char proName[22]={0}; 
 	
 	/* 初始化 */
 	GUI_Init();
 
-	/* 使能UTF-8编码 */     
+	/* 使能UTF-8编码 */ 
 	GUI_UC_SetEncodeUTF8(); 
+	 
+	/*
+	 关于多缓冲和窗口内存设备的设置说明
+	   1. 使能多缓冲是调用的如下函数，用户要在LCDConf_Lin_Template.c文件中配置了多缓冲，调用此函数才有效：
+		  WM_MULTIBUF_Enable(1);
+	   2. 窗口使能使用内存设备是调用函数：WM_SetCreateFlags(WM_CF_MEMDEV);
+	   3. 如果emWin的配置多缓冲和窗口内存设备都支持，二选一即可，且务必优先选择使用多缓冲，实际使用
+		  STM32F429BIT6 + 32位SDRAM + RGB565/RGB888平台测试，多缓冲可以有效的降低窗口移动或者滑动时的撕裂
+		  感，并有效的提高流畅性，通过使能窗口使用内存设备是做不到的。
+	   4. 所有emWin例子默认是开启三缓冲。
+	*/
+	WM_MULTIBUF_Enable(1);
+
+	/*
+       触摸校准函数默认是注释掉的，电阻屏需要校准，电容屏无需校准。如果用户需要校准电阻屏的话，执行
+	   此函数即可，会将触摸校准参数保存到EEPROM里面，以后系统上电会自动从EEPROM里面加载。
+	*/
+    //TOUCH_Calibration();
+	
+	/* 将字库从SD卡中加载到SPI FLASH里面，加载一次即可，以后使用注释掉此函数 */
+//	LoadFontLib();
+	
+//	/* 创建XBF字体 */
+//    GUI_SetXBF();
 		
 	GUI_SetBkColor(GUI_BLACK);
 	GUI_SetColor(GUI_WHITE);	
@@ -2359,8 +2343,8 @@ void MainTask(void)
 	GUI_SetFont(&GUI_Fontyahei36);
 	GUI_DispStringAt("正在初始化系统●●●", (LCD_GetXSize() - 8*36)/2 + 8, (LCD_GetYSize()/2 + 36 + 30));	
 		
-	ulTaskNotifyTake(pdTRUE,portMAX_DELAY); /* 无限等待 */
-	GUI_Delay(800);
+//	ulTaskNotifyTake(pdTRUE,xMaxBlockTimeUI); 
+	GUI_Delay(1500);
   if(File_Init())
 	{
 		GUI_SetColor(GUI_LIGHTBLUE);
@@ -2378,48 +2362,17 @@ void MainTask(void)
 		readPro(0);
 
 		GUI_Delay(1000);
-	}
- OP_JiaoZhun();
-	 
-	/*
-	 关于多缓冲和窗口内存设备的设置说明
-	   1. 使能多缓冲是调用的如下函数，用户要在LCDConf_Lin_Template.c文件中配置了多缓冲，调用此函数才有效：
-		  WM_MULTIBUF_Enable(1);
-	   2. 窗口使能使用内存设备是调用函数：WM_SetCreateFlags(WM_CF_MEMDEV);
-	   3. 如果emWin的配置多缓冲和窗口内存设备都支持，二选一即可，且务必优先选择使用多缓冲，实际使用
-		  STM32F429BIT6 + 32位SDRAM + RGB565/RGB888平台测试，多缓冲可以有效的降低窗口移动或者滑动时的撕裂
-		  感，并有效的提高流畅性，通过使能窗口使用内存设备是做不到的。
-	   4. 所有emWin例子默认是开启三缓冲。
-	*/
-	WM_MULTIBUF_Enable(1);
-//	task_create();
-
-	/*
-       触摸校准函数默认是注释掉的，电阻屏需要校准，电容屏无需校准。如果用户需要校准电阻屏的话，执行
-	   此函数即可，会将触摸校准参数保存到EEPROM里面，以后系统上电会自动从EEPROM里面加载。
-	*/
-    //TOUCH_Calibration();
+	}	
+	memset(proName,0,sizeof(proName));
+	sprintf(proName,"%s00",cfgname[0]);
+	ReadFileData(FS_VOLUME_SD,proName,&picArray,sizeof(CONFIG_PIC));
 	
-	/* 将字库从SD卡中加载到SPI FLASH里面，加载一次即可，以后使用注释掉此函数 */
-//	LoadFontLib();
-	
-//	/* 创建XBF字体 */
-//    GUI_SetXBF();
+	OP_JiaoZhun();
 	
 	/* 调用此函数会自动的刷新桌面窗口 */
 	WM_SetDesktopColor(GUI_BLUE);
-
-	/* 创建对话框 */
-//	hWinMain=GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialog, 0, 0, 0);
-
-		CreateFramewin5();
-		WM_HideWindow(hWinSet);
-		CreateFramewin4();
 	
-//	WM_CreateTimer(WM_GetClientWindow(hWinMain), /* 接受信息的窗口的句柄 */
-//				   ID_Timer1, 	         /* 用户定义的Id。如果不对同一窗口使用多个定时器，此值可以设置为零。ID_TimerGraph */
-//				   10,                       /* 周期，此周期过后指定窗口应收到消息*/
-//				   0);	                     /* 留待将来使用，应为0 */
+	CreateFramewin1();
 	
 	while(1) 
 	{

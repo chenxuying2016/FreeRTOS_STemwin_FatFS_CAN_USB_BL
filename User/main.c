@@ -516,7 +516,7 @@ static void vTaskCom(void *pvParameters)
 */
 static void vTaskUSBPro(void *pvParameters)
 {
-		usbh_OpenMassStorage();
+//		usbh_OpenMassStorage();
 	
     while(1)
     {
@@ -742,27 +742,3 @@ static void  App_Printf(char *format, ...)
 }
 
 /***************************** 安富莱电子 www.armfly.com (END OF FILE) *********************************/
-void task_create(void)
-{
-		xTaskCreate( vTaskTaskUserIF,   	/* 任务函数  */
-							 "vTaskUserIF",     	/* 任务名    */
-							 512,               	/* 任务栈大小，单位word，也就是4字节 */
-							 NULL,              	/* 任务参数  */
-							 2,                 	/* 任务优先级*/
-							 &xHandleTaskUserIF );  /* 任务句柄  */
-	
-	xTaskCreate( vTaskMsgPro,     		/* 任务函数  */
-							 "vTaskMsgPro",   		/* 任务名    */
-							 512,             		/* 任务栈大小，单位word，也就是4字节 2048*/
-							 NULL,           			/* 任务参数  */
-							 3,               		/* 任务优先级*/
-							 &xHandleTaskMsgPro );  /* 任务句柄  */		
-	
-	xTaskCreate( vTaskStart,     		/* 任务函数  */
-							 "vTaskStart",   		/* 任务名    */
-							 512,            		/* 任务栈大小，单位word，也就是4字节 */
-							 NULL,           		/* 任务参数  */
-							 4,              		/* 任务优先级*/
-							 &xHandleTaskStart );   /* 任务句柄  */
-	
-}

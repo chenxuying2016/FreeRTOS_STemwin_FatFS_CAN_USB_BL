@@ -72,7 +72,7 @@ static const char * FR_Table[]=
 
 void readPro(char maxProNum)
 {
-	char file_name[16] = {0};
+	char cur_file_name[16] = {0};
 	char (*ptProName)[16];
 	
 	ptProName = (char (*)[16])pvPortMalloc(640*16);//sizeof(char)*640*16
@@ -83,9 +83,9 @@ void readPro(char maxProNum)
 	addPro(maxProNum,ptProName);
 	vPortFree(ptProName);
 	
-	memset(file_name,0,sizeof(file_name));
-	sprintf(file_name, "proname");
-	ReadFileData(FS_VOLUME_SD,file_name,&currentPro,1);
+	memset(cur_file_name,0,sizeof(cur_file_name));
+	sprintf(cur_file_name, "proname");
+	ReadFileData(FS_VOLUME_SD,cur_file_name,&currentPro,1);
 }
 
 /*
@@ -1516,6 +1516,8 @@ void addPro(char len,char proname[][16])
 
 uint8_t File_Init(void)
 { 
+	usbh_OpenMassStorage();
+	
 	f_mount(NULL,"2:", 0);
 	result = f_mount(&fs_usb, "2:", 0);
 	if (result != FR_OK)
