@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FreeRTOS_STemwin_FatFS_CAN_USB7.1 - 副本", "Project.vcxproj", "{2F91FE68-F5D2-4C86-9323-882D64B61895}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F91FE68-F5D2-4C86-9323-882D64B61895}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F91FE68-F5D2-4C86-9323-882D64B61895}.Debug|Win32.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

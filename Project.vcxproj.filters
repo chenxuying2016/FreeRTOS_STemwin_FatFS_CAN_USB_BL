@@ -1,0 +1,3721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="emWin" />
+    <Filter Include="emWin\Config" />
+    <Filter Include="emWin\DisplayDriver" />
+    <Filter Include="emWin\emWinDemo" />
+    <Filter Include="emWin\emWinTask" />
+    <Filter Include="emWin\GUI_X" />
+    <Filter Include="emWin\Include" />
+    <Filter Include="FreeRTOS" />
+    <Filter Include="FreeRTOS\include" />
+    <Filter Include="FreeRTOS\portable" />
+    <Filter Include="FreeRTOS\portable\BCC" />
+    <Filter Include="FreeRTOS\portable\BCC\16BitDOS" />
+    <Filter Include="FreeRTOS\portable\BCC\16BitDOS\common" />
+    <Filter Include="FreeRTOS\portable\BCC\16BitDOS\Flsh186" />
+    <Filter Include="FreeRTOS\portable\BCC\16BitDOS\PC" />
+    <Filter Include="FreeRTOS\portable\CCS" />
+    <Filter Include="FreeRTOS\portable\CCS\ARM_CM4F" />
+    <Filter Include="FreeRTOS\portable\CCS\ARM_Cortex-R4" />
+    <Filter Include="FreeRTOS\portable\CCS\MSP430X" />
+    <Filter Include="FreeRTOS\portable\CodeWarrior" />
+    <Filter Include="FreeRTOS\portable\CodeWarrior\ColdFire_V1" />
+    <Filter Include="FreeRTOS\portable\CodeWarrior\ColdFire_V2" />
+    <Filter Include="FreeRTOS\portable\CodeWarrior\HCS12" />
+    <Filter Include="FreeRTOS\portable\GCC" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM7_AT91FR40008" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM7_AT91SAM7S" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM7_LPC2000" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM7_LPC23xx" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM_CA9" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM_CM0" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM_CM3" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM_CM3_MPU" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM_CM4F" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM_CM7" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM_CM7\r0p1" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM_CR5" />
+    <Filter Include="FreeRTOS\portable\GCC\ARM_CRx_No_GIC" />
+    <Filter Include="FreeRTOS\portable\GCC\ATMega323" />
+    <Filter Include="FreeRTOS\portable\GCC\AVR32_UC3" />
+    <Filter Include="FreeRTOS\portable\GCC\ColdFire_V2" />
+    <Filter Include="FreeRTOS\portable\GCC\CORTUS_APS3" />
+    <Filter Include="FreeRTOS\portable\GCC\H8S2329" />
+    <Filter Include="FreeRTOS\portable\GCC\HCS12" />
+    <Filter Include="FreeRTOS\portable\GCC\IA32_flat" />
+    <Filter Include="FreeRTOS\portable\GCC\MCF5235" />
+    <Filter Include="FreeRTOS\portable\GCC\MicroBlaze" />
+    <Filter Include="FreeRTOS\portable\GCC\MicroBlazeV8" />
+    <Filter Include="FreeRTOS\portable\GCC\MSP430F449" />
+    <Filter Include="FreeRTOS\portable\GCC\NiosII" />
+    <Filter Include="FreeRTOS\portable\GCC\PPC405_Xilinx" />
+    <Filter Include="FreeRTOS\portable\GCC\PPC440_Xilinx" />
+    <Filter Include="FreeRTOS\portable\GCC\RL78" />
+    <Filter Include="FreeRTOS\portable\GCC\RX100" />
+    <Filter Include="FreeRTOS\portable\GCC\RX600" />
+    <Filter Include="FreeRTOS\portable\GCC\RX600v2" />
+    <Filter Include="FreeRTOS\portable\GCC\STR75x" />
+    <Filter Include="FreeRTOS\portable\GCC\TriCore_1782" />
+    <Filter Include="FreeRTOS\portable\IAR" />
+    <Filter Include="FreeRTOS\portable\IAR\78K0R" />
+    <Filter Include="FreeRTOS\portable\IAR\ARM_CA5_No_GIC" />
+    <Filter Include="FreeRTOS\portable\IAR\ARM_CA9" />
+    <Filter Include="FreeRTOS\portable\IAR\ARM_CM0" />
+    <Filter Include="FreeRTOS\portable\IAR\ARM_CM3" />
+    <Filter Include="FreeRTOS\portable\IAR\ARM_CM4F" />
+    <Filter Include="FreeRTOS\portable\IAR\ARM_CM7" />
+    <Filter Include="FreeRTOS\portable\IAR\ARM_CM7\r0p1" />
+    <Filter Include="FreeRTOS\portable\IAR\ARM_CRx_No_GIC" />
+    <Filter Include="FreeRTOS\portable\IAR\ATMega323" />
+    <Filter Include="FreeRTOS\portable\IAR\AtmelSAM7S64" />
+    <Filter Include="FreeRTOS\portable\IAR\AtmelSAM9XE" />
+    <Filter Include="FreeRTOS\portable\IAR\AVR32_UC3" />
+    <Filter Include="FreeRTOS\portable\IAR\LPC2000" />
+    <Filter Include="FreeRTOS\portable\IAR\MSP430" />
+    <Filter Include="FreeRTOS\portable\IAR\MSP430X" />
+    <Filter Include="FreeRTOS\portable\IAR\RL78" />
+    <Filter Include="FreeRTOS\portable\IAR\RX100" />
+    <Filter Include="FreeRTOS\portable\IAR\RX600" />
+    <Filter Include="FreeRTOS\portable\IAR\RXv2" />
+    <Filter Include="FreeRTOS\portable\IAR\STR71x" />
+    <Filter Include="FreeRTOS\portable\IAR\STR75x" />
+    <Filter Include="FreeRTOS\portable\IAR\STR91x" />
+    <Filter Include="FreeRTOS\portable\IAR\V850ES" />
+    <Filter Include="FreeRTOS\portable\MemMang" />
+    <Filter Include="FreeRTOS\portable\MPLAB" />
+    <Filter Include="FreeRTOS\portable\MPLAB\PIC18F" />
+    <Filter Include="FreeRTOS\portable\MPLAB\PIC24_dsPIC" />
+    <Filter Include="FreeRTOS\portable\MPLAB\PIC32MEC14xx" />
+    <Filter Include="FreeRTOS\portable\MPLAB\PIC32MX" />
+    <Filter Include="FreeRTOS\portable\MPLAB\PIC32MZ" />
+    <Filter Include="FreeRTOS\portable\MSVC-MingW" />
+    <Filter Include="FreeRTOS\portable\oWatcom" />
+    <Filter Include="FreeRTOS\portable\oWatcom\16BitDOS" />
+    <Filter Include="FreeRTOS\portable\oWatcom\16BitDOS\common" />
+    <Filter Include="FreeRTOS\portable\oWatcom\16BitDOS\Flsh186" />
+    <Filter Include="FreeRTOS\portable\oWatcom\16BitDOS\PC" />
+    <Filter Include="FreeRTOS\portable\Paradigm" />
+    <Filter Include="FreeRTOS\portable\Paradigm\Tern_EE" />
+    <Filter Include="FreeRTOS\portable\Paradigm\Tern_EE\large_untested" />
+    <Filter Include="FreeRTOS\portable\Paradigm\Tern_EE\small" />
+    <Filter Include="FreeRTOS\portable\Renesas" />
+    <Filter Include="FreeRTOS\portable\Renesas\RX100" />
+    <Filter Include="FreeRTOS\portable\Renesas\RX200" />
+    <Filter Include="FreeRTOS\portable\Renesas\RX600" />
+    <Filter Include="FreeRTOS\portable\Renesas\RX600v2" />
+    <Filter Include="FreeRTOS\portable\Renesas\SH2A_FPU" />
+    <Filter Include="FreeRTOS\portable\Rowley" />
+    <Filter Include="FreeRTOS\portable\Rowley\MSP430F449" />
+    <Filter Include="FreeRTOS\portable\RVDS" />
+    <Filter Include="FreeRTOS\portable\RVDS\ARM7_LPC21xx" />
+    <Filter Include="FreeRTOS\portable\RVDS\ARM_CA9" />
+    <Filter Include="FreeRTOS\portable\RVDS\ARM_CM0" />
+    <Filter Include="FreeRTOS\portable\RVDS\ARM_CM3" />
+    <Filter Include="FreeRTOS\portable\RVDS\ARM_CM4F" />
+    <Filter Include="FreeRTOS\portable\RVDS\ARM_CM7" />
+    <Filter Include="FreeRTOS\portable\RVDS\ARM_CM7\r0p1" />
+    <Filter Include="FreeRTOS\portable\SDCC" />
+    <Filter Include="FreeRTOS\portable\SDCC\Cygnal" />
+    <Filter Include="FreeRTOS\portable\Softune" />
+    <Filter Include="FreeRTOS\portable\Softune\MB91460" />
+    <Filter Include="FreeRTOS\portable\Softune\MB96340" />
+    <Filter Include="FreeRTOS\portable\Tasking" />
+    <Filter Include="FreeRTOS\portable\Tasking\ARM_CM4F" />
+    <Filter Include="FreeRTOS\portable\WizC" />
+    <Filter Include="FreeRTOS\portable\WizC\PIC18" />
+    <Filter Include="FreeRTOS\portable\WizC\PIC18\Drivers" />
+    <Filter Include="FreeRTOS\portable\WizC\PIC18\Drivers\Tick" />
+    <Filter Include="Libraries" />
+    <Filter Include="Libraries\CMSIS" />
+    <Filter Include="Libraries\CMSIS\Device" />
+    <Filter Include="Libraries\CMSIS\Device\ST" />
+    <Filter Include="Libraries\CMSIS\Device\ST\STM32F4xx" />
+    <Filter Include="Libraries\CMSIS\Device\ST\STM32F4xx\Include" />
+    <Filter Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source" />
+    <Filter Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates" />
+    <Filter Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm" />
+    <Filter Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7" />
+    <Filter Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar" />
+    <Filter Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32" />
+    <Filter Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source\CommonTables" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions" />
+    <Filter Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions" />
+    <Filter Include="Libraries\CMSIS\Include" />
+    <Filter Include="Libraries\CMSIS\RTOS" />
+    <Filter Include="Libraries\CMSIS\RTOS\Template" />
+    <Filter Include="Libraries\STM32F4x7_ETH_Driver" />
+    <Filter Include="Libraries\STM32F4x7_ETH_Driver\inc" />
+    <Filter Include="Libraries\STM32F4x7_ETH_Driver\src" />
+    <Filter Include="Libraries\STM32F4xx_StdPeriph_Driver" />
+    <Filter Include="Libraries\STM32F4xx_StdPeriph_Driver\inc" />
+    <Filter Include="Libraries\STM32F4xx_StdPeriph_Driver\src" />
+    <Filter Include="Libraries\STM32_USB_Device_Library" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\audio" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\audio\inc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\audio\src" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\cdc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\cdc\inc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\cdc\src" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\customhid" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\customhid\inc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\customhid\src" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\dfu" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\dfu\inc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\dfu\src" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\hid" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\hid\inc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\hid\src" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\hid_cdc_wrapper" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\hid_cdc_wrapper\inc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\hid_cdc_wrapper\src" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\hid_msc_wrapper" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\hid_msc_wrapper\inc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\hid_msc_wrapper\src" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\msc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\msc\inc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Class\msc\src" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Core" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Core\inc" />
+    <Filter Include="Libraries\STM32_USB_Device_Library\Core\src" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Class" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Class\CDC" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Class\CDC\inc" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Class\CDC\src" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Class\HID" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Class\HID\inc" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Class\HID\src" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Class\MSC" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Class\MSC\inc" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Class\MSC\src" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Core" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Core\inc" />
+    <Filter Include="Libraries\STM32_USB_HOST_Library\Core\src" />
+    <Filter Include="Libraries\STM32_USB_OTG_Driver" />
+    <Filter Include="Libraries\STM32_USB_OTG_Driver\inc" />
+    <Filter Include="Libraries\STM32_USB_OTG_Driver\src" />
+    <Filter Include="User" />
+    <Filter Include="User\app" />
+    <Filter Include="User\app\inc" />
+    <Filter Include="User\app\src" />
+    <Filter Include="User\bsp" />
+    <Filter Include="User\bsp\inc" />
+    <Filter Include="User\bsp\src" />
+    <Filter Include="User\bsp\src\not use" />
+    <Filter Include="User\Demo" />
+    <Filter Include="User\Demo\Res" />
+    <Filter Include="User\fatfs" />
+    <Filter Include="User\fatfs\doc" />
+    <Filter Include="User\fatfs\doc\img" />
+    <Filter Include="User\fatfs\src" />
+    <Filter Include="User\fatfs\src\option" />
+    <Filter Include="User\fonts" />
+    <Filter Include="User\usbh_mass_storage" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="emWin\Config\GUIConf.c">
+      <Filter>emWin\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\Config\LCDConf_Lin_Template.c">
+      <Filter>emWin\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\Config\SIMConf.c">
+      <Filter>emWin\Config</Filter>
+    </ClCompile>
+    <ClInclude Include="emWin\Config\GUIConf.h">
+      <Filter>emWin\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Config\LCDConf_Lin_Template.h">
+      <Filter>emWin\Config</Filter>
+    </ClInclude>
+    <ClCompile Include="emWin\DisplayDriver\GUIDRV_Template.c">
+      <Filter>emWin\DisplayDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\DisplayDriver\LCDConf_FlexColor_Template.c">
+      <Filter>emWin\DisplayDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\DisplayDriver\LCDConf_Lin_Template.c">
+      <Filter>emWin\DisplayDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\DisplayDriver\SIMConf.c">
+      <Filter>emWin\DisplayDriver</Filter>
+    </ClCompile>
+    <ClInclude Include="emWin\DisplayDriver\GUIDRV_Template.h">
+      <Filter>emWin\DisplayDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\DisplayDriver\LCDConf_FlexColor_Template.h">
+      <Filter>emWin\DisplayDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\DisplayDriver\LCDConf_Lin_Template.h">
+      <Filter>emWin\DisplayDriver</Filter>
+    </ClInclude>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_AntialiasedText.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Automotive.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_BarGraph.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Bitmap.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_ColorBar.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Conf.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Cursor.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Fading.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Graph.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_IconView.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_ImageFlow.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Intro.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Listview.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_RadialMenu.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Resource.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Skinning.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Speed.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Speedometer.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Start.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_TransparentDialog.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_Treeview.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_VScreen.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_WashingMachine.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinDemo\GUIDEMO_ZoomAndRotate.c">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClCompile>
+    <ClInclude Include="emWin\emWinDemo\GUIDEMO.h">
+      <Filter>emWin\emWinDemo</Filter>
+    </ClInclude>
+    <ClCompile Include="emWin\emWinTask\App_SysFunction.c">
+      <Filter>emWin\emWinTask</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinTask\Logo-Cell.c">
+      <Filter>emWin\emWinTask</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinTask\Logo_armfly.c">
+      <Filter>emWin\emWinTask</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinTask\MainTask - 1.c">
+      <Filter>emWin\emWinTask</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinTask\MainTask - 2.c">
+      <Filter>emWin\emWinTask</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinTask\MainTask.c">
+      <Filter>emWin\emWinTask</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\emWinTask\Yahei.c">
+      <Filter>emWin\emWinTask</Filter>
+    </ClCompile>
+    <ClInclude Include="emWin\emWinTask\MainTask.h">
+      <Filter>emWin\emWinTask</Filter>
+    </ClInclude>
+    <ClCompile Include="emWin\GUI_X\GUI_VNC_X.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_VNC_X_StartServer.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_X.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_X_embOS.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_X_Ex.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_X_FreeRTOS.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_X_RTX.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_X_Touch.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_X_Touch_Analog.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_X_Touch_StoreState.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_X_uCOS.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClCompile Include="emWin\GUI_X\GUI_X_uEZ.c">
+      <Filter>emWin\GUI_X</Filter>
+    </ClCompile>
+    <ClInclude Include="emWin\Include\BUTTON.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\BUTTON_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\CALENDAR.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\CHECKBOX.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\CHECKBOX_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\CHOOSECOLOR.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\CHOOSEFILE.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\DIALOG.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\DIALOG_Intern.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\DROPDOWN.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\DROPDOWN_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\EDIT.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\EDIT_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\FRAMEWIN.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\FRAMEWIN_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\Global.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GRAPH.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GRAPH_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_DCache.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_DCache_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_Dist.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_FlexColor.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_FlexColor_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_Lin.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_Lin_Opt_16.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_Lin_Opt_24.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_Lin_Opt_32.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_Lin_Opt_8.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_Lin_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_NoOpt_1_8.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_Template.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_TemplateI.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIDRV_TemplateI_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUIMTDRV_TangoC32.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUITDRV_ADS7846.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_ARRAY.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_ARRAY_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_BMP_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_ConfDefaults.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_Debug.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_FontIntern.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_GIF_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_HOOK.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_JPEG_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_SetOrientation.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_SetOrientationCX.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_SIM_Win32.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_SPRITE_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_Type.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_Version.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\GUI_VNC.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\HEADER.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\HEADER_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\ICONVIEW.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\ICONVIEW_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\IMAGE.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\IMAGE_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\KNOB.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\KNOB_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LCD.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LCD_ConfDefaults.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LCD_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LCD_Protected.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LCD_SIM.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LISTBOX.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LISTBOX_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LISTVIEW.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LISTVIEW_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LISTWHEEL.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\LISTWHEEL_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\MENU.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\MENU_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\MESSAGEBOX.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\MULTIEDIT.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\MULTIPAGE.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\MULTIPAGE_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\PROGBAR.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\PROGBAR_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\RADIO.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\RADIO_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\SCROLLBAR.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\SCROLLBAR_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\SLIDER.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\SLIDER_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\SPINBOX.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\SPINBOX_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\SWIPELIST.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\SWIPELIST_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\TEXT.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\TEXT_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\TREEVIEW.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\TREEVIEW_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\WIDGET.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\WINDOW_Private.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\WM.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\WM_GUI.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="emWin\Include\WM_Intern.h">
+      <Filter>emWin\Include</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\croutine.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\event_groups.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\list.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\queue.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\tasks.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\timers.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\include\croutine.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\deprecated_definitions.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\event_groups.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\FreeRTOS.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\list.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\mpu_wrappers.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\portable.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\projdefs.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\queue.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\semphr.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\StackMacros.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\task.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\timers.h">
+      <Filter>FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\BCC\16BitDOS\common\portcomn.c">
+      <Filter>FreeRTOS\portable\BCC\16BitDOS\common</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\BCC\16BitDOS\common\portasm.h">
+      <Filter>FreeRTOS\portable\BCC\16BitDOS\common</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\BCC\16BitDOS\Flsh186\port.c">
+      <Filter>FreeRTOS\portable\BCC\16BitDOS\Flsh186</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\BCC\16BitDOS\Flsh186\prtmacro.h">
+      <Filter>FreeRTOS\portable\BCC\16BitDOS\Flsh186</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\BCC\16BitDOS\PC\port.c">
+      <Filter>FreeRTOS\portable\BCC\16BitDOS\PC</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\BCC\16BitDOS\PC\prtmacro.h">
+      <Filter>FreeRTOS\portable\BCC\16BitDOS\PC</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\CCS\ARM_CM4F\port.c">
+      <Filter>FreeRTOS\portable\CCS\ARM_CM4F</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\CCS\ARM_CM4F\portmacro.h">
+      <Filter>FreeRTOS\portable\CCS\ARM_CM4F</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\CCS\ARM_Cortex-R4\port.c">
+      <Filter>FreeRTOS\portable\CCS\ARM_Cortex-R4</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\CCS\ARM_Cortex-R4\portmacro.h">
+      <Filter>FreeRTOS\portable\CCS\ARM_Cortex-R4</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\CCS\MSP430X\port.c">
+      <Filter>FreeRTOS\portable\CCS\MSP430X</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\CCS\MSP430X\data_model.h">
+      <Filter>FreeRTOS\portable\CCS\MSP430X</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\CCS\MSP430X\portmacro.h">
+      <Filter>FreeRTOS\portable\CCS\MSP430X</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\CodeWarrior\ColdFire_V1\port.c">
+      <Filter>FreeRTOS\portable\CodeWarrior\ColdFire_V1</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\CodeWarrior\ColdFire_V1\portasm.S">
+      <Filter>FreeRTOS\portable\CodeWarrior\ColdFire_V1</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\CodeWarrior\ColdFire_V1\portmacro.h">
+      <Filter>FreeRTOS\portable\CodeWarrior\ColdFire_V1</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\CodeWarrior\ColdFire_V2\port.c">
+      <Filter>FreeRTOS\portable\CodeWarrior\ColdFire_V2</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\CodeWarrior\ColdFire_V2\portasm.S">
+      <Filter>FreeRTOS\portable\CodeWarrior\ColdFire_V2</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\CodeWarrior\ColdFire_V2\portmacro.h">
+      <Filter>FreeRTOS\portable\CodeWarrior\ColdFire_V2</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\CodeWarrior\HCS12\port.c">
+      <Filter>FreeRTOS\portable\CodeWarrior\HCS12</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\CodeWarrior\HCS12\portmacro.h">
+      <Filter>FreeRTOS\portable\CodeWarrior\HCS12</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM7_AT91FR40008\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM7_AT91FR40008</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM7_AT91FR40008\portISR.c">
+      <Filter>FreeRTOS\portable\GCC\ARM7_AT91FR40008</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM7_AT91FR40008\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM7_AT91FR40008</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM7_AT91SAM7S\lib_AT91SAM7X256.c">
+      <Filter>FreeRTOS\portable\GCC\ARM7_AT91SAM7S</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM7_AT91SAM7S\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM7_AT91SAM7S</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM7_AT91SAM7S\portISR.c">
+      <Filter>FreeRTOS\portable\GCC\ARM7_AT91SAM7S</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM7_AT91SAM7S\AT91SAM7X256.h">
+      <Filter>FreeRTOS\portable\GCC\ARM7_AT91SAM7S</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM7_AT91SAM7S\ioat91sam7x256.h">
+      <Filter>FreeRTOS\portable\GCC\ARM7_AT91SAM7S</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM7_AT91SAM7S\lib_AT91SAM7X256.h">
+      <Filter>FreeRTOS\portable\GCC\ARM7_AT91SAM7S</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM7_AT91SAM7S\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM7_AT91SAM7S</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM7_LPC2000\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM7_LPC2000</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM7_LPC2000\portISR.c">
+      <Filter>FreeRTOS\portable\GCC\ARM7_LPC2000</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM7_LPC2000\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM7_LPC2000</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM7_LPC23xx\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM7_LPC23xx</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM7_LPC23xx\portISR.c">
+      <Filter>FreeRTOS\portable\GCC\ARM7_LPC23xx</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM7_LPC23xx\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM7_LPC23xx</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CA9\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM_CA9</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CA9\portASM.S">
+      <Filter>FreeRTOS\portable\GCC\ARM_CA9</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM_CA9\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM_CA9</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CM0\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM_CM0</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM_CM0\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM_CM0</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CM3\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM_CM3</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM_CM3\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM_CM3</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CM3_MPU\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM_CM3_MPU</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM_CM3_MPU\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM_CM3_MPU</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CM4F\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM_CM4F</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM_CM4F\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM_CM4F</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CM7\r0p1\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM_CM7\r0p1</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM_CM7\r0p1</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CR5\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM_CR5</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CR5\portASM.S">
+      <Filter>FreeRTOS\portable\GCC\ARM_CR5</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM_CR5\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM_CR5</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CRx_No_GIC\port.c">
+      <Filter>FreeRTOS\portable\GCC\ARM_CRx_No_GIC</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\ARM_CRx_No_GIC\portASM.S">
+      <Filter>FreeRTOS\portable\GCC\ARM_CRx_No_GIC</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ARM_CRx_No_GIC\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ARM_CRx_No_GIC</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ATMega323\port.c">
+      <Filter>FreeRTOS\portable\GCC\ATMega323</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ATMega323\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ATMega323</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\AVR32_UC3\port.c">
+      <Filter>FreeRTOS\portable\GCC\AVR32_UC3</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\AVR32_UC3\exception.S">
+      <Filter>FreeRTOS\portable\GCC\AVR32_UC3</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\AVR32_UC3\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\AVR32_UC3</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\ColdFire_V2\port.c">
+      <Filter>FreeRTOS\portable\GCC\ColdFire_V2</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\ColdFire_V2\portasm.S">
+      <Filter>FreeRTOS\portable\GCC\ColdFire_V2</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\ColdFire_V2\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\ColdFire_V2</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\CORTUS_APS3\port.c">
+      <Filter>FreeRTOS\portable\GCC\CORTUS_APS3</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\CORTUS_APS3\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\CORTUS_APS3</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\H8S2329\port.c">
+      <Filter>FreeRTOS\portable\GCC\H8S2329</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\H8S2329\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\H8S2329</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\HCS12\port.c">
+      <Filter>FreeRTOS\portable\GCC\HCS12</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\HCS12\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\HCS12</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\IA32_flat\port.c">
+      <Filter>FreeRTOS\portable\GCC\IA32_flat</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\IA32_flat\portASM.S">
+      <Filter>FreeRTOS\portable\GCC\IA32_flat</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\IA32_flat\ISR_Support.h">
+      <Filter>FreeRTOS\portable\GCC\IA32_flat</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\GCC\IA32_flat\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\IA32_flat</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\MCF5235\port.c">
+      <Filter>FreeRTOS\portable\GCC\MCF5235</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\MCF5235\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\MCF5235</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\MicroBlaze\port.c">
+      <Filter>FreeRTOS\portable\GCC\MicroBlaze</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\MicroBlaze\portasm.s">
+      <Filter>FreeRTOS\portable\GCC\MicroBlaze</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\MicroBlaze\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\MicroBlaze</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\MicroBlazeV8\port.c">
+      <Filter>FreeRTOS\portable\GCC\MicroBlazeV8</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\MicroBlazeV8\port_exceptions.c">
+      <Filter>FreeRTOS\portable\GCC\MicroBlazeV8</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\MicroBlazeV8\portasm.S">
+      <Filter>FreeRTOS\portable\GCC\MicroBlazeV8</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\MicroBlazeV8\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\MicroBlazeV8</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\MSP430F449\port.c">
+      <Filter>FreeRTOS\portable\GCC\MSP430F449</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\MSP430F449\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\MSP430F449</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\NiosII\port.c">
+      <Filter>FreeRTOS\portable\GCC\NiosII</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\NiosII\port_asm.S">
+      <Filter>FreeRTOS\portable\GCC\NiosII</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\NiosII\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\NiosII</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\PPC405_Xilinx\port.c">
+      <Filter>FreeRTOS\portable\GCC\PPC405_Xilinx</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\PPC405_Xilinx\portasm.S">
+      <Filter>FreeRTOS\portable\GCC\PPC405_Xilinx</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\PPC405_Xilinx\FPU_Macros.h">
+      <Filter>FreeRTOS\portable\GCC\PPC405_Xilinx</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\GCC\PPC405_Xilinx\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\PPC405_Xilinx</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\PPC440_Xilinx\port.c">
+      <Filter>FreeRTOS\portable\GCC\PPC440_Xilinx</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\PPC440_Xilinx\portasm.S">
+      <Filter>FreeRTOS\portable\GCC\PPC440_Xilinx</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\PPC440_Xilinx\FPU_Macros.h">
+      <Filter>FreeRTOS\portable\GCC\PPC440_Xilinx</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\GCC\PPC440_Xilinx\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\PPC440_Xilinx</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\RL78\port.c">
+      <Filter>FreeRTOS\portable\GCC\RL78</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\RL78\portasm.S">
+      <Filter>FreeRTOS\portable\GCC\RL78</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\RL78\isr_support.h">
+      <Filter>FreeRTOS\portable\GCC\RL78</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\GCC\RL78\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\RL78</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\RX100\port.c">
+      <Filter>FreeRTOS\portable\GCC\RX100</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\RX100\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\RX100</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\RX600\port.c">
+      <Filter>FreeRTOS\portable\GCC\RX600</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\RX600\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\RX600</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\RX600v2\port.c">
+      <Filter>FreeRTOS\portable\GCC\RX600v2</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\RX600v2\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\RX600v2</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\STR75x\port.c">
+      <Filter>FreeRTOS\portable\GCC\STR75x</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\STR75x\portISR.c">
+      <Filter>FreeRTOS\portable\GCC\STR75x</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\STR75x\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\STR75x</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\GCC\TriCore_1782\port.c">
+      <Filter>FreeRTOS\portable\GCC\TriCore_1782</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\GCC\TriCore_1782\porttrap.c">
+      <Filter>FreeRTOS\portable\GCC\TriCore_1782</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\GCC\TriCore_1782\portmacro.h">
+      <Filter>FreeRTOS\portable\GCC\TriCore_1782</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\78K0R\port.c">
+      <Filter>FreeRTOS\portable\IAR\78K0R</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\78K0R\ISR_Support.h">
+      <Filter>FreeRTOS\portable\IAR\78K0R</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\78K0R\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\78K0R</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CA5_No_GIC\port.c">
+      <Filter>FreeRTOS\portable\IAR\ARM_CA5_No_GIC</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CA5_No_GIC\portASM.s">
+      <Filter>FreeRTOS\portable\IAR\ARM_CA5_No_GIC</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\ARM_CA5_No_GIC\portASM.h">
+      <Filter>FreeRTOS\portable\IAR\ARM_CA5_No_GIC</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\ARM_CA5_No_GIC\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\ARM_CA5_No_GIC</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CA9\port.c">
+      <Filter>FreeRTOS\portable\IAR\ARM_CA9</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CA9\portASM.s">
+      <Filter>FreeRTOS\portable\IAR\ARM_CA9</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\ARM_CA9\portASM.h">
+      <Filter>FreeRTOS\portable\IAR\ARM_CA9</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\ARM_CA9\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\ARM_CA9</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CM0\port.c">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM0</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CM0\portasm.s">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM0</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\ARM_CM0\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM0</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CM3\port.c">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM3</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CM3\portasm.s">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM3</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\ARM_CM3\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM3</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CM4F\port.c">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM4F</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CM4F\portasm.s">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM4F</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\ARM_CM4F\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM4F</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CM7\r0p1\port.c">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM7\r0p1</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CM7\r0p1\portasm.s">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM7\r0p1</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\ARM_CM7\r0p1\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\ARM_CM7\r0p1</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CRx_No_GIC\port.c">
+      <Filter>FreeRTOS\portable\IAR\ARM_CRx_No_GIC</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\ARM_CRx_No_GIC\portASM.s">
+      <Filter>FreeRTOS\portable\IAR\ARM_CRx_No_GIC</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\ARM_CRx_No_GIC\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\ARM_CRx_No_GIC</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\ATMega323\port.c">
+      <Filter>FreeRTOS\portable\IAR\ATMega323</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\ATMega323\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\ATMega323</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\AtmelSAM7S64\port.c">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\AT91SAM7S64.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\AT91SAM7S64_inc.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\AT91SAM7X128.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\AT91SAM7X128_inc.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\AT91SAM7X256.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\AT91SAM7X256_inc.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\ISR_Support.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\lib_AT91SAM7S64.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\lib_AT91SAM7X128.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\lib_AT91SAM7X256.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM7S64\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM7S64</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\AtmelSAM9XE\port.c">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM9XE</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM9XE\ISR_Support.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM9XE</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\AtmelSAM9XE\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\AtmelSAM9XE</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\AVR32_UC3\port.c">
+      <Filter>FreeRTOS\portable\IAR\AVR32_UC3</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\AVR32_UC3\read.c">
+      <Filter>FreeRTOS\portable\IAR\AVR32_UC3</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\AVR32_UC3\write.c">
+      <Filter>FreeRTOS\portable\IAR\AVR32_UC3</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\AVR32_UC3\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\AVR32_UC3</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\LPC2000\port.c">
+      <Filter>FreeRTOS\portable\IAR\LPC2000</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\LPC2000\ISR_Support.h">
+      <Filter>FreeRTOS\portable\IAR\LPC2000</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\LPC2000\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\LPC2000</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\MSP430\port.c">
+      <Filter>FreeRTOS\portable\IAR\MSP430</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\MSP430\portasm.h">
+      <Filter>FreeRTOS\portable\IAR\MSP430</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\MSP430\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\MSP430</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\MSP430X\port.c">
+      <Filter>FreeRTOS\portable\IAR\MSP430X</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\MSP430X\data_model.h">
+      <Filter>FreeRTOS\portable\IAR\MSP430X</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\MSP430X\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\MSP430X</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\RL78\port.c">
+      <Filter>FreeRTOS\portable\IAR\RL78</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\RL78\ISR_Support.h">
+      <Filter>FreeRTOS\portable\IAR\RL78</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\RL78\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\RL78</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\RX100\port.c">
+      <Filter>FreeRTOS\portable\IAR\RX100</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\RX100\port_asm.s">
+      <Filter>FreeRTOS\portable\IAR\RX100</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\RX100\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\RX100</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\RX600\port.c">
+      <Filter>FreeRTOS\portable\IAR\RX600</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\RX600\port_asm.s">
+      <Filter>FreeRTOS\portable\IAR\RX600</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\RX600\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\RX600</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\RXv2\port.c">
+      <Filter>FreeRTOS\portable\IAR\RXv2</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\IAR\RXv2\port_asm.s">
+      <Filter>FreeRTOS\portable\IAR\RXv2</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\RXv2\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\RXv2</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\STR71x\port.c">
+      <Filter>FreeRTOS\portable\IAR\STR71x</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\STR71x\ISR_Support.h">
+      <Filter>FreeRTOS\portable\IAR\STR71x</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\STR71x\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\STR71x</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\STR75x\port.c">
+      <Filter>FreeRTOS\portable\IAR\STR75x</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\STR75x\ISR_Support.h">
+      <Filter>FreeRTOS\portable\IAR\STR75x</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\STR75x\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\STR75x</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\STR91x\port.c">
+      <Filter>FreeRTOS\portable\IAR\STR91x</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\STR91x\ISR_Support.h">
+      <Filter>FreeRTOS\portable\IAR\STR91x</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\STR91x\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\STR91x</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\IAR\V850ES\port.c">
+      <Filter>FreeRTOS\portable\IAR\V850ES</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\IAR\V850ES\ISR_Support.h">
+      <Filter>FreeRTOS\portable\IAR\V850ES</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\IAR\V850ES\portmacro.h">
+      <Filter>FreeRTOS\portable\IAR\V850ES</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\MemMang\heap_1.c">
+      <Filter>FreeRTOS\portable\MemMang</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MemMang\heap_2.c">
+      <Filter>FreeRTOS\portable\MemMang</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MemMang\heap_3.c">
+      <Filter>FreeRTOS\portable\MemMang</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MemMang\heap_4.c">
+      <Filter>FreeRTOS\portable\MemMang</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MemMang\heap_5.c">
+      <Filter>FreeRTOS\portable\MemMang</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MPLAB\PIC18F\port.c">
+      <Filter>FreeRTOS\portable\MPLAB\PIC18F</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\MPLAB\PIC18F\portmacro.h">
+      <Filter>FreeRTOS\portable\MPLAB\PIC18F</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\MPLAB\PIC18F\stdio.h">
+      <Filter>FreeRTOS\portable\MPLAB\PIC18F</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\MPLAB\PIC24_dsPIC\port.c">
+      <Filter>FreeRTOS\portable\MPLAB\PIC24_dsPIC</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MPLAB\PIC24_dsPIC\portasm_dsPIC.S">
+      <Filter>FreeRTOS\portable\MPLAB\PIC24_dsPIC</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MPLAB\PIC24_dsPIC\portasm_PIC24.S">
+      <Filter>FreeRTOS\portable\MPLAB\PIC24_dsPIC</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\MPLAB\PIC24_dsPIC\portmacro.h">
+      <Filter>FreeRTOS\portable\MPLAB\PIC24_dsPIC</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\MPLAB\PIC32MEC14xx\port.c">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MEC14xx</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MPLAB\PIC32MEC14xx\port_asm.S">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MEC14xx</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\MPLAB\PIC32MEC14xx\ISR_Support.h">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MEC14xx</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\MPLAB\PIC32MEC14xx\portmacro.h">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MEC14xx</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\MPLAB\PIC32MX\port.c">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MX</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MPLAB\PIC32MX\port_asm.S">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MX</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\MPLAB\PIC32MX\ISR_Support.h">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MX</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\MPLAB\PIC32MX\portmacro.h">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MX</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\MPLAB\PIC32MZ\port.c">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MZ</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MPLAB\PIC32MZ\port_asm.S">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MZ</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\MPLAB\PIC32MZ\ISR_Support.h">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MZ</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\MPLAB\PIC32MZ\portmacro.h">
+      <Filter>FreeRTOS\portable\MPLAB\PIC32MZ</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\MSVC-MingW\port.c">
+      <Filter>FreeRTOS\portable\MSVC-MingW</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\MSVC-MingW\portmacro.h">
+      <Filter>FreeRTOS\portable\MSVC-MingW</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\oWatcom\16BitDOS\common\portcomn.c">
+      <Filter>FreeRTOS\portable\oWatcom\16BitDOS\common</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\oWatcom\16BitDOS\common\portasm.h">
+      <Filter>FreeRTOS\portable\oWatcom\16BitDOS\common</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\oWatcom\16BitDOS\Flsh186\port.c">
+      <Filter>FreeRTOS\portable\oWatcom\16BitDOS\Flsh186</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\oWatcom\16BitDOS\Flsh186\portmacro.h">
+      <Filter>FreeRTOS\portable\oWatcom\16BitDOS\Flsh186</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\oWatcom\16BitDOS\PC\port.c">
+      <Filter>FreeRTOS\portable\oWatcom\16BitDOS\PC</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\oWatcom\16BitDOS\PC\portmacro.h">
+      <Filter>FreeRTOS\portable\oWatcom\16BitDOS\PC</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Paradigm\Tern_EE\large_untested\port.c">
+      <Filter>FreeRTOS\portable\Paradigm\Tern_EE\large_untested</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Paradigm\Tern_EE\large_untested\portasm.h">
+      <Filter>FreeRTOS\portable\Paradigm\Tern_EE\large_untested</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\Paradigm\Tern_EE\large_untested\portmacro.h">
+      <Filter>FreeRTOS\portable\Paradigm\Tern_EE\large_untested</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Paradigm\Tern_EE\small\port.c">
+      <Filter>FreeRTOS\portable\Paradigm\Tern_EE\small</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Paradigm\Tern_EE\small\portasm.h">
+      <Filter>FreeRTOS\portable\Paradigm\Tern_EE\small</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\Paradigm\Tern_EE\small\portmacro.h">
+      <Filter>FreeRTOS\portable\Paradigm\Tern_EE\small</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Renesas\RX100\port.c">
+      <Filter>FreeRTOS\portable\Renesas\RX100</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Renesas\RX100\portmacro.h">
+      <Filter>FreeRTOS\portable\Renesas\RX100</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Renesas\RX200\port.c">
+      <Filter>FreeRTOS\portable\Renesas\RX200</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Renesas\RX200\portmacro.h">
+      <Filter>FreeRTOS\portable\Renesas\RX200</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Renesas\RX600\port.c">
+      <Filter>FreeRTOS\portable\Renesas\RX600</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Renesas\RX600\portmacro.h">
+      <Filter>FreeRTOS\portable\Renesas\RX600</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Renesas\RX600v2\port.c">
+      <Filter>FreeRTOS\portable\Renesas\RX600v2</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Renesas\RX600v2\portmacro.h">
+      <Filter>FreeRTOS\portable\Renesas\RX600v2</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Renesas\SH2A_FPU\port.c">
+      <Filter>FreeRTOS\portable\Renesas\SH2A_FPU</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Renesas\SH2A_FPU\portmacro.h">
+      <Filter>FreeRTOS\portable\Renesas\SH2A_FPU</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Rowley\MSP430F449\port.c">
+      <Filter>FreeRTOS\portable\Rowley\MSP430F449</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Rowley\MSP430F449\portasm.h">
+      <Filter>FreeRTOS\portable\Rowley\MSP430F449</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\Rowley\MSP430F449\portmacro.h">
+      <Filter>FreeRTOS\portable\Rowley\MSP430F449</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\RVDS\ARM7_LPC21xx\port.c">
+      <Filter>FreeRTOS\portable\RVDS\ARM7_LPC21xx</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\RVDS\ARM7_LPC21xx\portASM.s">
+      <Filter>FreeRTOS\portable\RVDS\ARM7_LPC21xx</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\RVDS\ARM7_LPC21xx\portmacro.h">
+      <Filter>FreeRTOS\portable\RVDS\ARM7_LPC21xx</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\RVDS\ARM_CA9\port.c">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CA9</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\RVDS\ARM_CA9\portASM.s">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CA9</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\RVDS\ARM_CA9\portmacro.h">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CA9</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\RVDS\ARM_CM0\port.c">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CM0</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\RVDS\ARM_CM0\portmacro.h">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CM0</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\RVDS\ARM_CM3\port.c">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CM3</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CM3</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\RVDS\ARM_CM4F\port.c">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CM4F</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\RVDS\ARM_CM4F\portmacro.h">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CM4F</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\RVDS\ARM_CM7\r0p1\port.c">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CM7\r0p1</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h">
+      <Filter>FreeRTOS\portable\RVDS\ARM_CM7\r0p1</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\SDCC\Cygnal\port.c">
+      <Filter>FreeRTOS\portable\SDCC\Cygnal</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\SDCC\Cygnal\portmacro.h">
+      <Filter>FreeRTOS\portable\SDCC\Cygnal</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Softune\MB91460\port.c">
+      <Filter>FreeRTOS\portable\Softune\MB91460</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\Softune\MB91460\__STD_LIB_sbrk.c">
+      <Filter>FreeRTOS\portable\Softune\MB91460</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Softune\MB91460\portmacro.h">
+      <Filter>FreeRTOS\portable\Softune\MB91460</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Softune\MB96340\port.c">
+      <Filter>FreeRTOS\portable\Softune\MB96340</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\Softune\MB96340\__STD_LIB_sbrk.c">
+      <Filter>FreeRTOS\portable\Softune\MB96340</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Softune\MB96340\portmacro.h">
+      <Filter>FreeRTOS\portable\Softune\MB96340</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\Tasking\ARM_CM4F\port.c">
+      <Filter>FreeRTOS\portable\Tasking\ARM_CM4F</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\Tasking\ARM_CM4F\portmacro.h">
+      <Filter>FreeRTOS\portable\Tasking\ARM_CM4F</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\WizC\PIC18\port.c">
+      <Filter>FreeRTOS\portable\WizC\PIC18</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\portable\WizC\PIC18\addFreeRTOS.h">
+      <Filter>FreeRTOS\portable\WizC\PIC18</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\WizC\PIC18\portmacro.h">
+      <Filter>FreeRTOS\portable\WizC\PIC18</Filter>
+    </ClInclude>
+    <ClCompile Include="FreeRTOS\portable\WizC\PIC18\Drivers\Tick\isrTick.c">
+      <Filter>FreeRTOS\portable\WizC\PIC18\Drivers\Tick</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\WizC\PIC18\Drivers\Tick\Tick.c">
+      <Filter>FreeRTOS\portable\WizC\PIC18\Drivers\Tick</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Include</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f40xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f40_41xxx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f410xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f411xe.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f427x.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f427_437xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429_439xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f446xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f469_479xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7\startup_stm32f401xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7\startup_stm32f40xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7\startup_stm32f40_41xxx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7\startup_stm32f427x.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7\startup_stm32f427_437xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7\startup_stm32f429_439xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f401xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f40xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f40_41xxx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f410xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f411xe.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f427x.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f427_437xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f429_439xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f446xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f469_479xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32\startup_stm32f401xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32\startup_stm32f40xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32\startup_stm32f40_41xxx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32\startup_stm32f410xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32\startup_stm32f411xe.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32\startup_stm32f427xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32\startup_stm32f427_437xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32\startup_stm32f429_439xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32\startup_stm32f446xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32\startup_stm32f469_479xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\SW4STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO\startup_stm32f401xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO\startup_stm32f40xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO\startup_stm32f40_41xxx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO\startup_stm32f410xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO\startup_stm32f411xe.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO\startup_stm32f427xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO\startup_stm32f427_437xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO\startup_stm32f429_439xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO\startup_stm32f446xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO\startup_stm32f469_479xx.s">
+      <Filter>Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\TrueSTUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_abs_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_abs_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_abs_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_abs_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_add_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_add_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_add_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_add_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_dot_prod_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_dot_prod_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_dot_prod_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_dot_prod_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_mult_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_mult_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_mult_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_mult_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_negate_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_negate_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_negate_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_negate_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_offset_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_offset_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_offset_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_offset_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_scale_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_scale_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_scale_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_scale_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_shift_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_shift_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_shift_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_sub_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_sub_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_sub_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions\arm_sub_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\BasicMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\CommonTables\arm_common_tables.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\CommonTables</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\CommonTables\arm_const_structs.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\CommonTables</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_conj_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_conj_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_conj_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_dot_prod_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_dot_prod_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_dot_prod_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mag_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mag_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mag_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mag_squared_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mag_squared_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mag_squared_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mult_cmplx_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mult_cmplx_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mult_cmplx_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mult_real_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mult_real_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions\arm_cmplx_mult_real_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ComplexMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions\arm_pid_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions\arm_pid_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions\arm_pid_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions\arm_pid_reset_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions\arm_pid_reset_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions\arm_pid_reset_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions\arm_sin_cos_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions\arm_sin_cos_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\ControllerFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions\arm_cos_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions\arm_cos_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions\arm_cos_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions\arm_sin_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions\arm_sin_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions\arm_sin_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions\arm_sqrt_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions\arm_sqrt_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df1_32x64_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df1_32x64_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df1_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df1_fast_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df1_fast_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df1_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df1_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df1_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df1_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df1_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df2T_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df2T_f64.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df2T_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_df2T_init_f64.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_stereo_df2T_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_biquad_cascade_stereo_df2T_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_fast_opt_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_fast_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_fast_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_opt_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_opt_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_partial_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_partial_fast_opt_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_partial_fast_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_partial_fast_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_partial_opt_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_partial_opt_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_partial_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_partial_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_partial_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_conv_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_correlate_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_correlate_fast_opt_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_correlate_fast_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_correlate_fast_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_correlate_opt_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_correlate_opt_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_correlate_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_correlate_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_correlate_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_decimate_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_decimate_fast_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_decimate_fast_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_decimate_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_decimate_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_decimate_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_decimate_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_decimate_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_fast_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_fast_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_init_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_interpolate_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_interpolate_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_interpolate_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_interpolate_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_interpolate_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_interpolate_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_lattice_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_lattice_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_lattice_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_lattice_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_lattice_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_lattice_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_sparse_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_sparse_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_sparse_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_sparse_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_sparse_init_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_sparse_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_sparse_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_sparse_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_iir_lattice_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_iir_lattice_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_iir_lattice_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_iir_lattice_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_iir_lattice_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_iir_lattice_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_norm_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_norm_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_norm_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_norm_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_norm_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_norm_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_lms_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_add_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_add_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_add_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_cmplx_mult_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_cmplx_mult_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_cmplx_mult_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_inverse_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_inverse_f64.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_mult_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_mult_fast_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_mult_fast_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_mult_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_mult_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_scale_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_scale_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_scale_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_sub_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_sub_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_sub_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_trans_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_trans_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions\arm_mat_trans_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\MatrixFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_max_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_max_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_max_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_max_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_mean_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_mean_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_mean_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_mean_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_min_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_min_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_min_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_min_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_power_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_power_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_power_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_power_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_rms_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_rms_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_rms_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_std_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_std_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_std_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_var_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_var_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions\arm_var_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\StatisticsFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_copy_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_copy_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_copy_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_copy_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_fill_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_fill_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_fill_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_fill_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_float_to_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_float_to_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_float_to_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_q15_to_float.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_q15_to_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_q15_to_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_q31_to_float.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_q31_to_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_q31_to_q7.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_q7_to_float.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_q7_to_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\SupportFunctions\arm_q7_to_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\SupportFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_bitreversal.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix2_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix2_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix2_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix2_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix2_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix2_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix4_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix4_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix4_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix4_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix4_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix4_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix8_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_dct4_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_dct4_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_dct4_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_dct4_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_dct4_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_dct4_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_fast_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_fast_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_init_f32.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_init_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_init_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_q15.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_q31.c">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_bitreversal2.S">
+      <Filter>Libraries\CMSIS\DSP_Lib\Source\TransformFunctions</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\CMSIS\Include\arm_common_tables.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\arm_const_structs.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\arm_math.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\cmsis_armcc.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\cmsis_armcc_V6.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\cmsis_gcc.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\core_cm0.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\core_cm0plus.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\core_cm3.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\core_cm4.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\core_cm7.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\core_cmFunc.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\core_cmInstr.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\core_cmSimd.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\core_sc000.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\Include\core_sc300.h">
+      <Filter>Libraries\CMSIS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\RTOS\Template\cmsis_os.h">
+      <Filter>Libraries\CMSIS\RTOS\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h">
+      <Filter>Libraries\STM32F4x7_ETH_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth_conf_template.h">
+      <Filter>Libraries\STM32F4x7_ETH_Driver\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32F4x7_ETH_Driver\src\stm32f4x7_eth.c">
+      <Filter>Libraries\STM32F4x7_ETH_Driver\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cec.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma2d.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dsi.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash_ramfunc.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmpi2c.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_lptim.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_ltdc.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_qspi.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spdifrx.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cec.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma2d.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dsi.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash_ramfunc.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fmc.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fmpi2c.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_lptim.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_ltdc.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_qspi.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sai.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spdifrx.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c">
+      <Filter>Libraries\STM32F4xx_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\audio\inc\usbd_audio_core.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\audio\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\audio\inc\usbd_audio_out_if.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\audio\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\audio\src\usbd_audio_core.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\audio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\audio\src\usbd_audio_out_if.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\audio\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\cdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core_loopback.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\cdc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_if_template.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\cdc\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\cdc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core_loopback.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\cdc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_if_template.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\cdc\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\customhid\inc\usbd_customhid_core.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\customhid\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\customhid\src\usbd_customhid_core.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\customhid\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\dfu\inc\usbd_dfu_core.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\dfu\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\dfu\inc\usbd_dfu_mal.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\dfu\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\dfu\inc\usbd_flash_if.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\dfu\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\dfu\inc\usbd_mem_if_template.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\dfu\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\dfu\inc\usbd_otp_if.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\dfu\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\dfu\src\usbd_dfu_core.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\dfu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\dfu\src\usbd_dfu_mal.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\dfu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\dfu\src\usbd_flash_if.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\dfu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\dfu\src\usbd_mem_if_template.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\dfu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\dfu\src\usbd_otp_if.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\dfu\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\hid\inc\usbd_hid_core.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\hid\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\hid\src\usbd_hid_core.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\hid\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\hid_cdc_wrapper\inc\usbd_hid_cdc_wrapper.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\hid_cdc_wrapper\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\hid_cdc_wrapper\src\usbd_hid_cdc_wrapper.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\hid_cdc_wrapper\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\hid_msc_wrapper\inc\usbd_msc_hid_core.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\hid_msc_wrapper\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\hid_msc_wrapper\src\usbd_msc_hid_core.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\hid_msc_wrapper\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_bot.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\msc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_core.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\msc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_data.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\msc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_mem.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\msc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_scsi.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\msc\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\msc\src\usbd_msc_bot.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\msc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\msc\src\usbd_msc_core.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\msc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\msc\src\usbd_msc_data.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\msc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\msc\src\usbd_msc_scsi.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\msc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Class\msc\src\usbd_storage_template.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Class\msc\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Core\inc\usbd_conf_template.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h">
+      <Filter>Libraries\STM32_USB_Device_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Core\src\usbd_core.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Core\src\usbd_ioreq.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_Device_Library\Core\src\usbd_req.c">
+      <Filter>Libraries\STM32_USB_Device_Library\Core\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Class\CDC\inc\usbh_cdc_core.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\CDC\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Class\CDC\inc\usbh_cdc_funct.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\CDC\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Class\CDC\src\usbh_cdc_core.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\CDC\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Class\CDC\src\usbh_cdc_funct.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\CDC\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Class\HID\inc\usbh_hid_core.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\HID\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Class\HID\inc\usbh_hid_keybd.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\HID\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Class\HID\inc\usbh_hid_mouse.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\HID\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Class\HID\src\usbh_hid_core.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\HID\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Class\HID\src\usbh_hid_keybd.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\HID\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Class\HID\src\usbh_hid_mouse.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\HID\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Class\MSC\inc\usbh_msc_bot.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\MSC\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Class\MSC\inc\usbh_msc_core.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\MSC\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Class\MSC\inc\usbh_msc_scsi.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\MSC\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Class\MSC\src\usbh_msc_bot.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\MSC\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Class\MSC\src\usbh_msc_core.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\MSC\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Class\MSC\src\usbh_msc_fatfs.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\MSC\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Class\MSC\src\usbh_msc_scsi.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Class\MSC\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Core\inc\usbh_conf_template.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Core\inc\usbh_core.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Core\inc\usbh_def.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Core\inc\usbh_hcs.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Core\inc\usbh_ioreq.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_HOST_Library\Core\inc\usbh_stdreq.h">
+      <Filter>Libraries\STM32_USB_HOST_Library\Core\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Core\src\usbh_core.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Core\src\usbh_hcs.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Core\src\usbh_ioreq.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_HOST_Library\Core\src\usbh_stdreq.c">
+      <Filter>Libraries\STM32_USB_HOST_Library\Core\src</Filter>
+    </ClCompile>
+    <ClInclude Include="Libraries\STM32_USB_OTG_Driver\inc\usb_bsp.h">
+      <Filter>Libraries\STM32_USB_OTG_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_OTG_Driver\inc\usb_conf_template.h">
+      <Filter>Libraries\STM32_USB_OTG_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_OTG_Driver\inc\usb_core.h">
+      <Filter>Libraries\STM32_USB_OTG_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_OTG_Driver\inc\usb_dcd.h">
+      <Filter>Libraries\STM32_USB_OTG_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_OTG_Driver\inc\usb_dcd_int.h">
+      <Filter>Libraries\STM32_USB_OTG_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h">
+      <Filter>Libraries\STM32_USB_OTG_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_OTG_Driver\inc\usb_hcd.h">
+      <Filter>Libraries\STM32_USB_OTG_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_OTG_Driver\inc\usb_hcd_int.h">
+      <Filter>Libraries\STM32_USB_OTG_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_OTG_Driver\inc\usb_otg.h">
+      <Filter>Libraries\STM32_USB_OTG_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h">
+      <Filter>Libraries\STM32_USB_OTG_Driver\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="Libraries\STM32_USB_OTG_Driver\src\usb_bsp_template.c">
+      <Filter>Libraries\STM32_USB_OTG_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_OTG_Driver\src\usb_core.c">
+      <Filter>Libraries\STM32_USB_OTG_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_OTG_Driver\src\usb_dcd.c">
+      <Filter>Libraries\STM32_USB_OTG_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_OTG_Driver\src\usb_dcd_int.c">
+      <Filter>Libraries\STM32_USB_OTG_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_OTG_Driver\src\usb_hcd.c">
+      <Filter>Libraries\STM32_USB_OTG_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_OTG_Driver\src\usb_hcd_int.c">
+      <Filter>Libraries\STM32_USB_OTG_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32_USB_OTG_Driver\src\usb_otg.c">
+      <Filter>Libraries\STM32_USB_OTG_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\ARM_FPGA.c">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="User\ARM_FPGA2.c">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="User\can_network - 副本.c">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="User\can_network.c">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="User\main.c">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="User\main1.c">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="User\SysInfoTest.c">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClInclude Include="User\ARM_FPGA.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="User\can_network.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="User\FreeRTOSConfig.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="User\includes.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="User\app\inc\demo_fatfs.h">
+      <Filter>User\app\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\app\inc\demo_fatfs2.h">
+      <Filter>User\app\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="User\app\src\demo_fatfs.c">
+      <Filter>User\app\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\app\src\demo_fatfs1.c">
+      <Filter>User\app\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\app\src\demo_fatfs2.c">
+      <Filter>User\app\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\app\src\demo_fatfs3.c">
+      <Filter>User\app\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\app\src\demo_fatfs4.c">
+      <Filter>User\app\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\bsp.c">
+      <Filter>User\bsp</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\bsp_msg.c">
+      <Filter>User\bsp</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\stm32f4xx_assert.c">
+      <Filter>User\bsp</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\stm32f4xx_it.c">
+      <Filter>User\bsp</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\system_stm32f4xx.c">
+      <Filter>User\bsp</Filter>
+    </ClCompile>
+    <ClInclude Include="User\bsp\bsp.h">
+      <Filter>User\bsp</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\bsp_msg.h">
+      <Filter>User\bsp</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\stm32f4xx_conf.h">
+      <Filter>User\bsp</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\stm32f4xx_it.h">
+      <Filter>User\bsp</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_ad7606.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_ad9833.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_adc_dso.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_ads1256.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_beep.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_bh1750.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_bmp085.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_camera.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_cpu_flash.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_dac8501.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_dac8562.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_dac_wave.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_dht11.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_ds18b20.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_dwt.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_eeprom_24xx.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_esp8266.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_eth.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_ext_io.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_fmc_sdram.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_gps.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_gt811.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_hmc5883l.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_i2c_gpio.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_ir_decode.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_key.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_led.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_mg323.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_modbus.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_mpu6050.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_nand_flash.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_oled.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_ps2.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_rs485_led.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_sdio_sd.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_si4730.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_sim800.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_spi_bus.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_spi_flash.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_tft_429.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_tft_lcd.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_timer.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_tim_pwm.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_tm7705.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_touch.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_ts_ft5x06.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_uart_fifo.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_usb.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_user_lib.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_vs1053b.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_watchdog.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_wm8978.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\bsp_wwdg.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\param.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="User\bsp\inc\TOUCH_STMPE811.h">
+      <Filter>User\bsp\inc</Filter>
+    </ClInclude>
+    <ClCompile Include="User\bsp\src\bsp_ad7606.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_ad9833.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_adc_dso.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_ads1256.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_beep.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_bh1750.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_bmp085.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_camera.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_cpu_flash.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_dac8501.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_dac8562.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_dac_wave.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_dht11.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_ds18b20.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_dwt.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_eeprom_24xx.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_esp8266.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_ext_io.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_fmc_sdram.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_gps.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_gt811.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_hmc5883l.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_i2c_gpio.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_ir_decode.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_key.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_led.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_modbus.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_mpu6050.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_nand_flash.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_nand_flash_(FSMC).c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_oled.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_ps2.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_rs485_led.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_sdio_sd.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_si4730.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_sim800.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_spi_bus.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_spi_flash.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_tft_429.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_tft_lcd.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_timer.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_tim_pwm.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_tm7705.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_touch.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_ts_ft5x06.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_uart_fifo.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_uart_fifo0.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_usb.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_user_lib.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_vs1053b.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_watchdog.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\bsp_wm8978.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\param.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\TOUCH_STMPE811.c">
+      <Filter>User\bsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\not use\bsp_eth(not use).c">
+      <Filter>User\bsp\src\not use</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\not use\bsp_mg323.c">
+      <Filter>User\bsp\src\not use</Filter>
+    </ClCompile>
+    <ClCompile Include="User\bsp\src\not use\bsp_wwdg.c">
+      <Filter>User\bsp\src\not use</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\demo_clock.c">
+      <Filter>User\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\demo_cpu.c">
+      <Filter>User\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\demo_game.c">
+      <Filter>User\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\demo_image.c">
+      <Filter>User\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\demo_menu.c">
+      <Filter>User\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\demo_startup.c">
+      <Filter>User\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\demo_systeminfo.c">
+      <Filter>User\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\demo_video.c">
+      <Filter>User\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\alarmclock.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\background.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\clock.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\clock_res.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\common_res.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\cpu.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\game.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\image.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\info.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\Logo-Cell.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\Logo-Name.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\logo0.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\menu_res.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\multimedia.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\project-name.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\startup_res.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Demo\Res\tishi.c">
+      <Filter>User\Demo\Res</Filter>
+    </ClCompile>
+    <ClInclude Include="User\Demo\Res\common_res.h">
+      <Filter>User\Demo\Res</Filter>
+    </ClInclude>
+    <ClCompile Include="User\fatfs\doc\img\app1.c">
+      <Filter>User\fatfs\doc\img</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\doc\img\app2.c">
+      <Filter>User\fatfs\doc\img</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\doc\img\app3.c">
+      <Filter>User\fatfs\doc\img</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\doc\img\app4.c">
+      <Filter>User\fatfs\doc\img</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\src\diskio.c">
+      <Filter>User\fatfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\src\ff.c">
+      <Filter>User\fatfs\src</Filter>
+    </ClCompile>
+    <ClInclude Include="User\fatfs\src\diskio.h">
+      <Filter>User\fatfs\src</Filter>
+    </ClInclude>
+    <ClInclude Include="User\fatfs\src\ff.h">
+      <Filter>User\fatfs\src</Filter>
+    </ClInclude>
+    <ClInclude Include="User\fatfs\src\ffconf.h">
+      <Filter>User\fatfs\src</Filter>
+    </ClInclude>
+    <ClInclude Include="User\fatfs\src\integer.h">
+      <Filter>User\fatfs\src</Filter>
+    </ClInclude>
+    <ClCompile Include="User\fatfs\src\option\cc932.c">
+      <Filter>User\fatfs\src\option</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\src\option\cc936.c">
+      <Filter>User\fatfs\src\option</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\src\option\cc949.c">
+      <Filter>User\fatfs\src\option</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\src\option\cc950.c">
+      <Filter>User\fatfs\src\option</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\src\option\ccsbcs.c">
+      <Filter>User\fatfs\src\option</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\src\option\syscall.c">
+      <Filter>User\fatfs\src\option</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fatfs\src\option\unicode.c">
+      <Filter>User\fatfs\src\option</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\asc12.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\asc16.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\brush48.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\FontSong16.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\hz16.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\hz24.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\hz32.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\kai24.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\ra8875_asc_width.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\song16.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\xingshu48.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\yahei30.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="User\fonts\yahei36.c">
+      <Filter>User\fonts</Filter>
+    </ClCompile>
+    <ClInclude Include="User\fonts\fonts.h">
+      <Filter>User\fonts</Filter>
+    </ClInclude>
+    <ClCompile Include="User\usbh_mass_storage\usbh_it.c">
+      <Filter>User\usbh_mass_storage</Filter>
+    </ClCompile>
+    <ClCompile Include="User\usbh_mass_storage\usbh_usr.c">
+      <Filter>User\usbh_mass_storage</Filter>
+    </ClCompile>
+    <ClCompile Include="User\usbh_mass_storage\usb_bsp.c">
+      <Filter>User\usbh_mass_storage</Filter>
+    </ClCompile>
+    <ClInclude Include="User\usbh_mass_storage\usbh_bsp_msc.h">
+      <Filter>User\usbh_mass_storage</Filter>
+    </ClInclude>
+    <ClInclude Include="User\usbh_mass_storage\usbh_conf.h">
+      <Filter>User\usbh_mass_storage</Filter>
+    </ClInclude>
+    <ClInclude Include="User\usbh_mass_storage\usbh_usr.h">
+      <Filter>User\usbh_mass_storage</Filter>
+    </ClInclude>
+    <ClInclude Include="User\usbh_mass_storage\usb_conf.h">
+      <Filter>User\usbh_mass_storage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="User\SysInfoTest.h">
+      <Filter>User</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
